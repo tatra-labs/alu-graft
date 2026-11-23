@@ -1,0 +1,94 @@
+{
+ "n": 2000,
+ "seconds": 38.0872220993042,
+ "accuracy": {
+  "all": 1.0,
+  "format|compact": 1.0,
+  "op|-": 1.0,
+  "digits|4": 1.0,
+  "format|spaced": 1.0,
+  "op|+": 1.0,
+  "format|mixed_eq_spaced": 1.0,
+  "digits|5": 1.0,
+  "format|mixed_op_spaced": 1.0,
+  "format|prose": 1.0,
+  "digits|3": 1.0,
+  "format|question": 1.0,
+  "format|chat": 1.0,
+  "format|chat_spaced": 1.0,
+  "digits|6": 1.0,
+  "digits|2": 1.0,
+  "digits|1": 1.0
+ },
+ "counts": {
+  "all": [
+   2000,
+   2000
+  ],
+  "format|compact": [
+   250,
+   250
+  ],
+  "op|-": [
+   983,
+   983
+  ],
+  "digits|4": [
+   402,
+   402
+  ],
+  "format|spaced": [
+   250,
+   250
+  ],
+  "op|+": [
+   1017,
+   1017
+  ],
+  "format|mixed_eq_spaced": [
+   250,
+   250
+  ],
+  "digits|5": [
+   523,
+   523
+  ],
+  "format|mixed_op_spaced": [
+   250,
+   250
+  ],
+  "format|prose": [
+   250,
+   250
+  ],
+  "digits|3": [
+   263,
+   263
+  ],
+  "format|question": [
+   250,
+   250
+  ],
+  "format|chat": [
+   250,
+   250
+  ],
+  "format|chat_spaced": [
+   250,
+   250
+  ],
+  "digits|6": [
+   584,
+   584
+  ],
+  "digits|2": [
+   169,
+   169
+  ],
+  "digits|1": [
+   59,
+   59
+  ]
+ },
+ "failures": []
+}

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+scratch/
+qwen3-0.6b-alu/
+*.egg-info/

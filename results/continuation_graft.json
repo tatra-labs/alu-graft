@@ -1,0 +1,6021 @@
+{
+ "model": "graft",
+ "n": 600,
+ "accuracy": 1.0,
+ "by_digits": {
+  "1": 1.0,
+  "2": 1.0,
+  "3": 1.0,
+  "4": 1.0,
+  "5": 1.0,
+  "6": 1.0
+ },
+ "by_format": {
+  "0": 1.0,
+  "1": 1.0,
+  "2": 1.0,
+  "3": 1.0
+ },
+ "rows": [
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "-",
+   "b": 1,
+   "truth": 3,
+   "format": 0,
+   "cont": "3\n3-1=2\n2-1=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "+",
+   "b": 1,
+   "truth": 3,
+   "format": 1,
+   "cont": " 3\n3 + 1 = 4\n4",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "-",
+   "b": 8,
+   "truth": -2,
+   "format": 2,
+   "cont": "-2\n</think>\n\nThe result of 6 minus ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 8,
+   "truth": -5,
+   "format": 3,
+   "cont": " -5\nA: 3 - 8 = -",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "-",
+   "b": 1,
+   "truth": 1,
+   "format": 0,
+   "cont": "1\n1-1=0\n0-1=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 4,
+   "truth": -4,
+   "format": 1,
+   "cont": " -4\n-4 - 4 = -8\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "-",
+   "b": 4,
+   "truth": -2,
+   "format": 2,
+   "cont": "-2\n</think>\n\n2-4=-2",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 1,
+   "op": "-",
+   "b": 9,
+   "truth": -8,
+   "format": 3,
+   "cont": " -8\nA: 1 - 9 = -",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "+",
+   "b": 3,
+   "truth": 11,
+   "format": 0,
+   "cont": "11\n11+2=13\n1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "+",
+   "b": 4,
+   "truth": 11,
+   "format": 1,
+   "cont": " 11\n11 + 5 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 4,
+   "truth": -4,
+   "format": 2,
+   "cont": "-4? Or is it 0-4=-",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "-",
+   "b": 6,
+   "truth": 0,
+   "format": 3,
+   "cont": " 0\nA: 6 - 6 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "+",
+   "b": 2,
+   "truth": 9,
+   "format": 0,
+   "cont": "9\n9+3=12\n12+",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "+",
+   "b": 0,
+   "truth": 4,
+   "format": 1,
+   "cont": " 4\n4 + 0 = 4\n4",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "-",
+   "b": 4,
+   "truth": 3,
+   "format": 2,
+   "cont": "3\n</think>\n\n3",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "+",
+   "b": 3,
+   "truth": 5,
+   "format": 3,
+   "cont": " 5\nA: 5\nA: 5",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 7,
+   "truth": -4,
+   "format": 0,
+   "cont": "-4\n-4-4= -8\n-",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "-",
+   "b": 6,
+   "truth": -1,
+   "format": 1,
+   "cont": " -1\n-1 - 1 = -2\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 1,
+   "truth": 6,
+   "format": 2,
+   "cont": "6\n</think>\n\n5+1=6",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "+",
+   "b": 9,
+   "truth": 13,
+   "format": 3,
+   "cont": " 13\nA: 13\nA:",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "-",
+   "b": 2,
+   "truth": 3,
+   "format": 0,
+   "cont": "3\n3-2=1\n1-2=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 0,
+   "truth": 0,
+   "format": 1,
+   "cont": " 0\n0 - 0 = 0\n0",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "+",
+   "b": 5,
+   "truth": 9,
+   "format": 2,
+   "cont": "9\n</think>\n\n9",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "+",
+   "b": 5,
+   "truth": 9,
+   "format": 3,
+   "cont": " 9\nA: 9\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "-",
+   "b": 1,
+   "truth": 8,
+   "format": 0,
+   "cont": "8\n8-1=7\n7-1=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "+",
+   "b": 4,
+   "truth": 11,
+   "format": 1,
+   "cont": " 11\n11 + 5 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 9,
+   "truth": 15,
+   "format": 2,
+   "cont": "15\n</think>\n\n6 + 9 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "-",
+   "b": 0,
+   "truth": 9,
+   "format": 3,
+   "cont": " 9\nA: 9 - 0 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "-",
+   "b": 2,
+   "truth": 5,
+   "format": 0,
+   "cont": "5\n5-2=3\n3-2=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "+",
+   "b": 9,
+   "truth": 13,
+   "format": 1,
+   "cont": " 13\n13 + 4 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "+",
+   "b": 6,
+   "truth": 9,
+   "format": 2,
+   "cont": "9\n</think>\n\n9",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "+",
+   "b": 0,
+   "truth": 0,
+   "format": 3,
+   "cont": " 0\nA: 0 + 0 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "+",
+   "b": 2,
+   "truth": 11,
+   "format": 0,
+   "cont": "11\n11+3=14\n1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "-",
+   "b": 3,
+   "truth": 6,
+   "format": 1,
+   "cont": " 6\n6 - 3 = 3\n3",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 1,
+   "op": "-",
+   "b": 8,
+   "truth": -7,
+   "format": 2,
+   "cont": "-7.5\n</think>\n\nThe expression 1-",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "+",
+   "b": 7,
+   "truth": 10,
+   "format": 3,
+   "cont": " 10\nA: 10\nA:",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "-",
+   "b": 6,
+   "truth": 1,
+   "format": 0,
+   "cont": "1\n7-6=1\n7-6=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 6,
+   "truth": -3,
+   "format": 1,
+   "cont": " -3\n-3 + 4 = 1\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "-",
+   "b": 3,
+   "truth": 3,
+   "format": 2,
+   "cont": "3\n</think>\n\n3",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 0,
+   "truth": 0,
+   "format": 3,
+   "cont": " 0\nA: 0 - 0 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "+",
+   "b": 8,
+   "truth": 11,
+   "format": 0,
+   "cont": "11\n11+1=12\n1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 4,
+   "truth": 10,
+   "format": 1,
+   "cont": " 10\n10 + 5 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "+",
+   "b": 5,
+   "truth": 5,
+   "format": 2,
+   "cont": "5\n</think>\n\n0+5=5",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 7,
+   "truth": -7,
+   "format": 3,
+   "cont": " -7\nA: 0 - 7 = -",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 3,
+   "truth": 9,
+   "format": 0,
+   "cont": "9\n9+4=13\n13+",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "-",
+   "b": 7,
+   "truth": -3,
+   "format": 1,
+   "cont": " -3\n-3 + 5 = 2\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "-",
+   "b": 3,
+   "truth": 5,
+   "format": 2,
+   "cont": "5\n</think>\n\n5",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 7,
+   "truth": 13,
+   "format": 3,
+   "cont": " 13\nA: 13\nA:",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 0,
+   "truth": 3,
+   "format": 0,
+   "cont": "3\n3-0=3\n3-0=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "+",
+   "b": 0,
+   "truth": 4,
+   "format": 1,
+   "cont": " 4\n4 + 0 = 4\n4",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "-",
+   "b": 7,
+   "truth": 2,
+   "format": 2,
+   "cont": "2\n</think>\n\n2",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "+",
+   "b": 0,
+   "truth": 3,
+   "format": 3,
+   "cont": " 3\nA: 3 + 0 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 9,
+   "truth": -9,
+   "format": 0,
+   "cont": "-9\n10-9=1\n10",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 6,
+   "truth": 12,
+   "format": 1,
+   "cont": " 12\n12 + 6 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 2,
+   "truth": 1,
+   "format": 2,
+   "cont": "1\n</think>\n\n3 - 2 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "+",
+   "b": 7,
+   "truth": 15,
+   "format": 3,
+   "cont": " 15\nA: 15\nA:",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "+",
+   "b": 9,
+   "truth": 9,
+   "format": 0,
+   "cont": "9\n9+9=18\n18+",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "+",
+   "b": 4,
+   "truth": 12,
+   "format": 1,
+   "cont": " 12\n12 + 4 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 1,
+   "truth": 6,
+   "format": 2,
+   "cont": "6\n</think>\n\n5+1=6",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 1,
+   "truth": 6,
+   "format": 3,
+   "cont": " 6\nA: 6\nA: 6",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "-",
+   "b": 3,
+   "truth": 3,
+   "format": 0,
+   "cont": "3\n3-2=1\n1-1=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 7,
+   "truth": -4,
+   "format": 1,
+   "cont": " -4\n-4 - 1 = -5\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 1,
+   "op": "-",
+   "b": 1,
+   "truth": 0,
+   "format": 2,
+   "cont": "0? Or 1-1=0? Or ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 7,
+   "truth": 13,
+   "format": 3,
+   "cont": " 13\nA: 13\nA:",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 4,
+   "op": "-",
+   "b": 7,
+   "truth": -3,
+   "format": 0,
+   "cont": "-3\n-3+1= -2\n-",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "-",
+   "b": 2,
+   "truth": 6,
+   "format": 1,
+   "cont": " 6\n6 - 2 = 4\n4",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "-",
+   "b": 2,
+   "truth": 0,
+   "format": 2,
+   "cont": "0\n</think>\n\n0",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 4,
+   "truth": 9,
+   "format": 3,
+   "cont": " 9\nA: 9\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "+",
+   "b": 4,
+   "truth": 4,
+   "format": 0,
+   "cont": "4\n4+4=8\n8+4=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "-",
+   "b": 9,
+   "truth": -2,
+   "format": 1,
+   "cont": " -2\n-2 - 1 = -3\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "-",
+   "b": 3,
+   "truth": 5,
+   "format": 2,
+   "cont": "5\n</think>\n\n5",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 3,
+   "truth": 8,
+   "format": 3,
+   "cont": " 8\nA: 8\nA: 8",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "-",
+   "b": 9,
+   "truth": -9,
+   "format": 0,
+   "cont": "-9\n10-9=1\n10",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "-",
+   "b": 4,
+   "truth": 5,
+   "format": 1,
+   "cont": " 5\n5 + 4 = 9\n9",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "-",
+   "b": 2,
+   "truth": 4,
+   "format": 2,
+   "cont": "4\n</think>\n\n4",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "-",
+   "b": 2,
+   "truth": 3,
+   "format": 3,
+   "cont": " 3\nA: 5 - 2 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "+",
+   "b": 2,
+   "truth": 11,
+   "format": 0,
+   "cont": "11\n11+3=14\n1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "-",
+   "b": 3,
+   "truth": 2,
+   "format": 1,
+   "cont": " 2\n2 + 2 = 4\n4",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 1,
+   "op": "+",
+   "b": 6,
+   "truth": 7,
+   "format": 2,
+   "cont": "7\n</think>\n\n1+6=7",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 5,
+   "truth": 10,
+   "format": 3,
+   "cont": " 10\nA: 10\nA:",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 0,
+   "op": "+",
+   "b": 9,
+   "truth": 9,
+   "format": 0,
+   "cont": "9\n9+9=18\n18+",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "+",
+   "b": 1,
+   "truth": 6,
+   "format": 1,
+   "cont": " 6\n6 + 1 = 7\n7",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "+",
+   "b": 7,
+   "truth": 16,
+   "format": 2,
+   "cont": "16\n</think>\n\n9 + 7 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "+",
+   "b": 7,
+   "truth": 9,
+   "format": 3,
+   "cont": " 9\nA: 9\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 9,
+   "truth": 15,
+   "format": 0,
+   "cont": "15\n15+12=27\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 4,
+   "truth": -1,
+   "format": 1,
+   "cont": " -1\n-1 - 2 = -3\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 5,
+   "op": "-",
+   "b": 8,
+   "truth": -3,
+   "format": 2,
+   "cont": "-3\n</think>\n\n5 - 8 = -3",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "-",
+   "b": 6,
+   "truth": 2,
+   "format": 3,
+   "cont": " 2\nA: 8 - 6 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "+",
+   "b": 6,
+   "truth": 13,
+   "format": 0,
+   "cont": "13\n13-10=3\n3",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "-",
+   "b": 8,
+   "truth": -6,
+   "format": 1,
+   "cont": " -6\n-6 + 1 = -5\n",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 6,
+   "op": "+",
+   "b": 6,
+   "truth": 12,
+   "format": 2,
+   "cont": "12\n</think>\n\n6 + 6 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "-",
+   "b": 1,
+   "truth": 7,
+   "format": 3,
+   "cont": " 7\nA: 7\nA: 7",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "+",
+   "b": 4,
+   "truth": 13,
+   "format": 0,
+   "cont": "13\n13+5=18\n1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 7,
+   "op": "-",
+   "b": 3,
+   "truth": 4,
+   "format": 1,
+   "cont": " 4\n4 - 2 = 2\n2",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "+",
+   "b": 3,
+   "truth": 5,
+   "format": 2,
+   "cont": "5\n</think>\n\n2+3=5",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 2,
+   "op": "+",
+   "b": 0,
+   "truth": 2,
+   "format": 3,
+   "cont": " 2\nA: 2 + 0 = ",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 9,
+   "op": "-",
+   "b": 9,
+   "truth": 0,
+   "format": 0,
+   "cont": "0\n9-9=0\n9-9=",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 8,
+   "op": "+",
+   "b": 3,
+   "truth": 11,
+   "format": 1,
+   "cont": " 11\n11 + 2 = 1",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 3,
+   "op": "-",
+   "b": 0,
+   "truth": 3,
+   "format": 2,
+   "cont": "3\n</think>\n\n3-0=3",
+   "ok": true
+  },
+  {
+   "digits": 1,
+   "a": 1,
+   "op": "+",
+   "b": 4,
+   "truth": 5,
+   "format": 3,
+   "cont": " 5\nA: 5\nA: 5",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 88,
+   "op": "+",
+   "b": 90,
+   "truth": 178,
+   "format": 0,
+   "cont": "178\n178+92=2",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 6,
+   "op": "+",
+   "b": 26,
+   "truth": 32,
+   "format": 1,
+   "cont": " 32\n32 + 26 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 98,
+   "op": "+",
+   "b": 10,
+   "truth": 108,
+   "format": 2,
+   "cont": "108\n</think>\n\n98 + 10",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 29,
+   "op": "-",
+   "b": 37,
+   "truth": -8,
+   "format": 3,
+   "cont": " -8\nA: 29 - 37",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 74,
+   "op": "-",
+   "b": 18,
+   "truth": 56,
+   "format": 0,
+   "cont": "56\n56-18=38\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 2,
+   "op": "-",
+   "b": 42,
+   "truth": -40,
+   "format": 1,
+   "cont": " -40\n-40 - 42 =",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 61,
+   "op": "+",
+   "b": 52,
+   "truth": 113,
+   "format": 2,
+   "cont": "113\n</think>\n\n61 + 52",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 17,
+   "op": "+",
+   "b": 64,
+   "truth": 81,
+   "format": 3,
+   "cont": " 81\nA: 17 + 6",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 96,
+   "op": "-",
+   "b": 12,
+   "truth": 84,
+   "format": 0,
+   "cont": "84\n84-12=72\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 1,
+   "op": "+",
+   "b": 30,
+   "truth": 31,
+   "format": 1,
+   "cont": " 31\n31 + 30 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 39,
+   "op": "+",
+   "b": 3,
+   "truth": 42,
+   "format": 2,
+   "cont": "42\n</think>\n\n39 + 3 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 78,
+   "op": "-",
+   "b": 33,
+   "truth": 45,
+   "format": 3,
+   "cont": " 45\nA: 78 - 3",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 53,
+   "op": "+",
+   "b": 32,
+   "truth": 85,
+   "format": 0,
+   "cont": "85\n53+32=85\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 7,
+   "op": "-",
+   "b": 89,
+   "truth": -82,
+   "format": 1,
+   "cont": " -82\n-82 - 89 =",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 92,
+   "op": "+",
+   "b": 62,
+   "truth": 154,
+   "format": 2,
+   "cont": "154\n</think>\n\n92 + 62",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 4,
+   "op": "-",
+   "b": 84,
+   "truth": -80,
+   "format": 3,
+   "cont": " -80\nA: 4 - 84",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 90,
+   "op": "+",
+   "b": 53,
+   "truth": 143,
+   "format": 0,
+   "cont": "143\n143+12=1",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 5,
+   "op": "+",
+   "b": 23,
+   "truth": 28,
+   "format": 1,
+   "cont": " 28\n28 + 15 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 77,
+   "op": "-",
+   "b": 70,
+   "truth": 7,
+   "format": 2,
+   "cont": "7\n</think>\n\n77 - 70 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 2,
+   "op": "-",
+   "b": 15,
+   "truth": -13,
+   "format": 3,
+   "cont": " -13\nA: 2 - 15",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 14,
+   "op": "+",
+   "b": 3,
+   "truth": 17,
+   "format": 0,
+   "cont": "17\n17-10=7\n7",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 87,
+   "op": "-",
+   "b": 27,
+   "truth": 60,
+   "format": 1,
+   "cont": " 60\n60 - 27 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 74,
+   "op": "+",
+   "b": 8,
+   "truth": 82,
+   "format": 2,
+   "cont": "82\n</think>\n\n74 + 8 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 3,
+   "op": "-",
+   "b": 89,
+   "truth": -86,
+   "format": 3,
+   "cont": " -86\nA: 3 - 89",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 14,
+   "op": "-",
+   "b": 0,
+   "truth": 14,
+   "format": 0,
+   "cont": "14\n14-0=14\n1",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 3,
+   "op": "+",
+   "b": 56,
+   "truth": 59,
+   "format": 1,
+   "cont": " 59\n59 + 12 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 48,
+   "op": "-",
+   "b": 59,
+   "truth": -11,
+   "format": 2,
+   "cont": "-11\n</think>\n\n-11",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 2,
+   "op": "-",
+   "b": 62,
+   "truth": -60,
+   "format": 3,
+   "cont": " -60\nA: 2 - 62",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 75,
+   "op": "-",
+   "b": 8,
+   "truth": 67,
+   "format": 0,
+   "cont": "67.5\n75-8=67",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 36,
+   "op": "-",
+   "b": 65,
+   "truth": -29,
+   "format": 1,
+   "cont": " -29\n36 - 65 = -",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 37,
+   "op": "-",
+   "b": 0,
+   "truth": 37,
+   "format": 2,
+   "cont": "37\n</think>\n\n37 - 0 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 45,
+   "op": "-",
+   "b": 52,
+   "truth": -7,
+   "format": 3,
+   "cont": " -7\nA: 45 - 52",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 51,
+   "op": "+",
+   "b": 89,
+   "truth": 140,
+   "format": 0,
+   "cont": "140\n140-100=",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 45,
+   "op": "+",
+   "b": 75,
+   "truth": 120,
+   "format": 1,
+   "cont": " 120\n120 + 15",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 61,
+   "op": "-",
+   "b": 4,
+   "truth": 57,
+   "format": 2,
+   "cont": "57\n</think>\n\n57",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 9,
+   "op": "+",
+   "b": 50,
+   "truth": 59,
+   "format": 3,
+   "cont": " 59\nA: 9 + 50",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 89,
+   "op": "+",
+   "b": 1,
+   "truth": 90,
+   "format": 0,
+   "cont": "90\n90+1=91\n9",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 95,
+   "op": "-",
+   "b": 37,
+   "truth": 58,
+   "format": 1,
+   "cont": " 58\n58 + 37 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 92,
+   "op": "+",
+   "b": 5,
+   "truth": 97,
+   "format": 2,
+   "cont": "97\n</think>\n\n92 + 5 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 82,
+   "op": "+",
+   "b": 36,
+   "truth": 118,
+   "format": 3,
+   "cont": " 118\nA: 82 + ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 41,
+   "op": "+",
+   "b": 8,
+   "truth": 49,
+   "format": 0,
+   "cont": "49\n49+1=50\n5",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 5,
+   "op": "+",
+   "b": 47,
+   "truth": 52,
+   "format": 1,
+   "cont": " 52\n5 + 47 = 5",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 94,
+   "op": "+",
+   "b": 2,
+   "truth": 96,
+   "format": 2,
+   "cont": "96\n</think>\n\n94 + 2 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 3,
+   "op": "+",
+   "b": 43,
+   "truth": 46,
+   "format": 3,
+   "cont": " 46\nA: 3 + 43",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 90,
+   "op": "-",
+   "b": 52,
+   "truth": 38,
+   "format": 0,
+   "cont": "38\n38-10=28\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 2,
+   "op": "+",
+   "b": 37,
+   "truth": 39,
+   "format": 1,
+   "cont": " 39\n3 + 37 = 4",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 30,
+   "op": "-",
+   "b": 0,
+   "truth": 30,
+   "format": 2,
+   "cont": "30\n</think>\n\n30-0=30",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 23,
+   "op": "+",
+   "b": 35,
+   "truth": 58,
+   "format": 3,
+   "cont": " 58\nA: 23 + 3",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 71,
+   "op": "-",
+   "b": 86,
+   "truth": -15,
+   "format": 0,
+   "cont": "-15\n-15-15= -",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 56,
+   "op": "-",
+   "b": 65,
+   "truth": -9,
+   "format": 1,
+   "cont": " -9\n56 - 65 = -9",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 14,
+   "op": "+",
+   "b": 2,
+   "truth": 16,
+   "format": 2,
+   "cont": "16\n</think>\n\n14 + 2 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 38,
+   "op": "+",
+   "b": 47,
+   "truth": 85,
+   "format": 3,
+   "cont": " 85\nA: 38 + 4",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 83,
+   "op": "-",
+   "b": 34,
+   "truth": 49,
+   "format": 0,
+   "cont": "49\n49-34=15\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 56,
+   "op": "+",
+   "b": 78,
+   "truth": 134,
+   "format": 1,
+   "cont": " 134\n134 + 12",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 34,
+   "op": "+",
+   "b": 5,
+   "truth": 39,
+   "format": 2,
+   "cont": "39\n</think>\n\n34 + 5 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 0,
+   "op": "+",
+   "b": 13,
+   "truth": 13,
+   "format": 3,
+   "cont": " 13\nA: 13\nA:",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 47,
+   "op": "-",
+   "b": 5,
+   "truth": 42,
+   "format": 0,
+   "cont": "42\n42-2=40\n4",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 4,
+   "op": "+",
+   "b": 60,
+   "truth": 64,
+   "format": 1,
+   "cont": " 64\n64 + 60 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 58,
+   "op": "-",
+   "b": 9,
+   "truth": 49,
+   "format": 2,
+   "cont": "49\n</think>\n\n58 - 9 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 55,
+   "op": "-",
+   "b": 10,
+   "truth": 45,
+   "format": 3,
+   "cont": " 45\nA: 55 - 1",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 67,
+   "op": "-",
+   "b": 0,
+   "truth": 67,
+   "format": 0,
+   "cont": "67-0=67\n67-0",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 1,
+   "op": "-",
+   "b": 52,
+   "truth": -51,
+   "format": 1,
+   "cont": " -51\n-51 - 52 =",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 20,
+   "op": "+",
+   "b": 7,
+   "truth": 27,
+   "format": 2,
+   "cont": "27\n</think>\n\n20 + 7 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 2,
+   "op": "+",
+   "b": 88,
+   "truth": 90,
+   "format": 3,
+   "cont": " 90\nA: 2 + 88",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 86,
+   "op": "+",
+   "b": 12,
+   "truth": 98,
+   "format": 0,
+   "cont": "98\n86+13=99\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 65,
+   "op": "+",
+   "b": 39,
+   "truth": 104,
+   "format": 1,
+   "cont": " 104\n104 + 10",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 27,
+   "op": "-",
+   "b": 2,
+   "truth": 25,
+   "format": 2,
+   "cont": "25\n</think>\n\n25",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 6,
+   "op": "-",
+   "b": 50,
+   "truth": -44,
+   "format": 3,
+   "cont": " -44\nA: 6 - 50",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 54,
+   "op": "-",
+   "b": 8,
+   "truth": 46,
+   "format": 0,
+   "cont": "46\n46-8=38\n3",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 86,
+   "op": "+",
+   "b": 52,
+   "truth": 138,
+   "format": 1,
+   "cont": " 138\n138 + 12",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 56,
+   "op": "+",
+   "b": 9,
+   "truth": 65,
+   "format": 2,
+   "cont": "65\n</think>\n\n56 + 9 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 70,
+   "op": "+",
+   "b": 25,
+   "truth": 95,
+   "format": 3,
+   "cont": " 95\nA: 70 + 2",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 30,
+   "op": "+",
+   "b": 2,
+   "truth": 32,
+   "format": 0,
+   "cont": "32\n32+2=34\n3",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 8,
+   "op": "+",
+   "b": 54,
+   "truth": 62,
+   "format": 1,
+   "cont": " 62\n62 + 10 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 87,
+   "op": "+",
+   "b": 2,
+   "truth": 89,
+   "format": 2,
+   "cont": "89\n</think>\n\n87 + 2 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 89,
+   "op": "-",
+   "b": 17,
+   "truth": 72,
+   "format": 3,
+   "cont": " 72\nA: 89 - 1",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 45,
+   "op": "-",
+   "b": 36,
+   "truth": 9,
+   "format": 0,
+   "cont": "9\n9*10=90\n90",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 77,
+   "op": "+",
+   "b": 98,
+   "truth": 175,
+   "format": 1,
+   "cont": " 175\n77 + 98 =",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 46,
+   "op": "+",
+   "b": 6,
+   "truth": 52,
+   "format": 2,
+   "cont": "52\n</think>\n\n52",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 5,
+   "op": "-",
+   "b": 77,
+   "truth": -72,
+   "format": 3,
+   "cont": " -72\nA: 5 - 77",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 35,
+   "op": "+",
+   "b": 6,
+   "truth": 41,
+   "format": 0,
+   "cont": "41\n41+7=48\n4",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 14,
+   "op": "+",
+   "b": 46,
+   "truth": 60,
+   "format": 1,
+   "cont": " 60\n60 + 12 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 32,
+   "op": "+",
+   "b": 3,
+   "truth": 35,
+   "format": 2,
+   "cont": "35\n</think>\n\n35",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 0,
+   "op": "-",
+   "b": 10,
+   "truth": -10,
+   "format": 3,
+   "cont": " -10\nA: 0 - 10",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 18,
+   "op": "-",
+   "b": 21,
+   "truth": -3,
+   "format": 0,
+   "cont": "-3\n18-21=-3\n",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 3,
+   "op": "+",
+   "b": 75,
+   "truth": 78,
+   "format": 1,
+   "cont": " 78\n78 + 10 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 18,
+   "op": "-",
+   "b": 2,
+   "truth": 16,
+   "format": 2,
+   "cont": "16\n</think>\n\n16",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 1,
+   "op": "-",
+   "b": 76,
+   "truth": -75,
+   "format": 3,
+   "cont": " -75\nA: 1 - 76",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 95,
+   "op": "+",
+   "b": 45,
+   "truth": 140,
+   "format": 0,
+   "cont": "140\n140-100=",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 9,
+   "op": "+",
+   "b": 92,
+   "truth": 101,
+   "format": 1,
+   "cont": " 101\n9 + 92 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 30,
+   "op": "-",
+   "b": 0,
+   "truth": 30,
+   "format": 2,
+   "cont": "30\n</think>\n\n30-0=30",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 48,
+   "op": "-",
+   "b": 85,
+   "truth": -37,
+   "format": 3,
+   "cont": " -37\nA: 48 - 8",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 77,
+   "op": "-",
+   "b": 5,
+   "truth": 72,
+   "format": 0,
+   "cont": "72\n72-5=67\n6",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 9,
+   "op": "+",
+   "b": 67,
+   "truth": 76,
+   "format": 1,
+   "cont": " 76\n76 + 12 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 93,
+   "op": "+",
+   "b": 84,
+   "truth": 177,
+   "format": 2,
+   "cont": "177\n</think>\n\n93 + 84",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 4,
+   "op": "-",
+   "b": 85,
+   "truth": -81,
+   "format": 3,
+   "cont": " -81\nA: 4 - 85",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 30,
+   "op": "+",
+   "b": 48,
+   "truth": 78,
+   "format": 0,
+   "cont": "78\n78+48=126",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 48,
+   "op": "+",
+   "b": 50,
+   "truth": 98,
+   "format": 1,
+   "cont": " 98\n98 - 50 = ",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 89,
+   "op": "-",
+   "b": 47,
+   "truth": 42,
+   "format": 2,
+   "cont": "42\n</think>\n\n42",
+   "ok": true
+  },
+  {
+   "digits": 2,
+   "a": 94,
+   "op": "-",
+   "b": 31,
+   "truth": 63,
+   "format": 3,
+   "cont": " 63\nA: 94 - 3",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 984,
+   "op": "-",
+   "b": 3,
+   "truth": 981,
+   "format": 0,
+   "cont": "981\n981-3=97",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 954,
+   "op": "+",
+   "b": 298,
+   "truth": 1252,
+   "format": 1,
+   "cont": " 1252\n954 + 2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 198,
+   "op": "+",
+   "b": 49,
+   "truth": 247,
+   "format": 2,
+   "cont": "247\n</think>\n\n247",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 105,
+   "op": "+",
+   "b": 147,
+   "truth": 252,
+   "format": 3,
+   "cont": " 252\nA: 105 +",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 800,
+   "op": "+",
+   "b": 669,
+   "truth": 1469,
+   "format": 0,
+   "cont": "1469\n1469-14",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 3,
+   "op": "-",
+   "b": 481,
+   "truth": -478,
+   "format": 1,
+   "cont": " -478\n-478 - 4",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 347,
+   "op": "-",
+   "b": 90,
+   "truth": 257,
+   "format": 2,
+   "cont": "257\n</think>\n\n257",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 542,
+   "op": "+",
+   "b": 397,
+   "truth": 939,
+   "format": 3,
+   "cont": " 939\nA: 542 +",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 909,
+   "op": "+",
+   "b": 15,
+   "truth": 924,
+   "format": 0,
+   "cont": "924\n924+15=9",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 0,
+   "op": "+",
+   "b": 516,
+   "truth": 516,
+   "format": 1,
+   "cont": " 516\n516 + 0 =",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 267,
+   "op": "+",
+   "b": 65,
+   "truth": 332,
+   "format": 2,
+   "cont": "332\n</think>\n\n267 + 6",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 327,
+   "op": "-",
+   "b": 482,
+   "truth": -155,
+   "format": 3,
+   "cont": " -155\nA: 327 -",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 457,
+   "op": "+",
+   "b": 999,
+   "truth": 1456,
+   "format": 0,
+   "cont": "1456\n457+999",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 5,
+   "op": "+",
+   "b": 472,
+   "truth": 477,
+   "format": 1,
+   "cont": " 477\n477 + 47",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 686,
+   "op": "-",
+   "b": 37,
+   "truth": 649,
+   "format": 2,
+   "cont": "649\n</think>\n\n686 - 3",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 83,
+   "op": "+",
+   "b": 543,
+   "truth": 626,
+   "format": 3,
+   "cont": " 626\nA: 83 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 261,
+   "op": "-",
+   "b": 21,
+   "truth": 240,
+   "format": 0,
+   "cont": "240\n240-20=2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 77,
+   "op": "+",
+   "b": 315,
+   "truth": 392,
+   "format": 1,
+   "cont": " 392\n392 + 12",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 392,
+   "op": "+",
+   "b": 1,
+   "truth": 393,
+   "format": 2,
+   "cont": "393\n</think>\n\n392 + 1",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 7,
+   "op": "-",
+   "b": 548,
+   "truth": -541,
+   "format": 3,
+   "cont": " -541\nA: 7 - 5",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 425,
+   "op": "-",
+   "b": 61,
+   "truth": 364,
+   "format": 0,
+   "cont": "364.5\n364.5-",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 23,
+   "op": "-",
+   "b": 917,
+   "truth": -894,
+   "format": 1,
+   "cont": " -894\n23 - 917",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 621,
+   "op": "-",
+   "b": 19,
+   "truth": 602,
+   "format": 2,
+   "cont": "602\n</think>\n\n621 - 1",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 57,
+   "op": "+",
+   "b": 999,
+   "truth": 1056,
+   "format": 3,
+   "cont": " 1056\nA: 57 +",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 975,
+   "op": "+",
+   "b": 736,
+   "truth": 1711,
+   "format": 0,
+   "cont": "1711\n975+736",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 46,
+   "op": "-",
+   "b": 226,
+   "truth": -180,
+   "format": 1,
+   "cont": " -180\n-180 - 1",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 136,
+   "op": "+",
+   "b": 632,
+   "truth": 768,
+   "format": 2,
+   "cont": "768\n</think>\n\n136 + 6",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 288,
+   "op": "-",
+   "b": 893,
+   "truth": -605,
+   "format": 3,
+   "cont": " -605\nA: 288 -",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 998,
+   "op": "-",
+   "b": 8,
+   "truth": 990,
+   "format": 0,
+   "cont": "990\n990-99=8",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 66,
+   "op": "+",
+   "b": 527,
+   "truth": 593,
+   "format": 1,
+   "cont": " 593\n66 + 527",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 986,
+   "op": "-",
+   "b": 11,
+   "truth": 975,
+   "format": 2,
+   "cont": "975\n</think>\n\n986 - 1",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 70,
+   "op": "-",
+   "b": 859,
+   "truth": -789,
+   "format": 3,
+   "cont": " -789\nA: 70 - ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 244,
+   "op": "-",
+   "b": 5,
+   "truth": 239,
+   "format": 0,
+   "cont": "239\n239-23=2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 4,
+   "op": "-",
+   "b": 654,
+   "truth": -650,
+   "format": 1,
+   "cont": " -650\n-650 - 6",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 910,
+   "op": "-",
+   "b": 239,
+   "truth": 671,
+   "format": 2,
+   "cont": "671\n</think>\n\n910 - 2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 71,
+   "op": "+",
+   "b": 456,
+   "truth": 527,
+   "format": 3,
+   "cont": " 527\nA: 71 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 916,
+   "op": "-",
+   "b": 784,
+   "truth": 132,
+   "format": 0,
+   "cont": "132\n916-784=",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 85,
+   "op": "+",
+   "b": 736,
+   "truth": 821,
+   "format": 1,
+   "cont": " 821\n821 + 12",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 648,
+   "op": "+",
+   "b": 280,
+   "truth": 928,
+   "format": 2,
+   "cont": "928\n</think>\n\n648 + 2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 97,
+   "op": "-",
+   "b": 990,
+   "truth": -893,
+   "format": 3,
+   "cont": " -893\nA: 97 - ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 146,
+   "op": "+",
+   "b": 0,
+   "truth": 146,
+   "format": 0,
+   "cont": "146\n146+1=14",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 29,
+   "op": "-",
+   "b": 422,
+   "truth": -393,
+   "format": 1,
+   "cont": " -393\n29 - 422",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 688,
+   "op": "-",
+   "b": 39,
+   "truth": 649,
+   "format": 2,
+   "cont": "649\n</think>\n\n649",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 1,
+   "op": "-",
+   "b": 136,
+   "truth": -135,
+   "format": 3,
+   "cont": " -135\nA: 1 - 1",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 838,
+   "op": "+",
+   "b": 3,
+   "truth": 841,
+   "format": 0,
+   "cont": "841\n841+3=84",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 78,
+   "op": "+",
+   "b": 164,
+   "truth": 242,
+   "format": 1,
+   "cont": " 242\n242 + 16",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 300,
+   "op": "+",
+   "b": 0,
+   "truth": 300,
+   "format": 2,
+   "cont": "300\n</think>\n\n300 + 0",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 914,
+   "op": "+",
+   "b": 295,
+   "truth": 1209,
+   "format": 3,
+   "cont": " 1209\nA: 914",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 613,
+   "op": "-",
+   "b": 7,
+   "truth": 606,
+   "format": 0,
+   "cont": "606\n613-7=60",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 43,
+   "op": "-",
+   "b": 687,
+   "truth": -644,
+   "format": 1,
+   "cont": " -644\n43 - 687",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 234,
+   "op": "-",
+   "b": 824,
+   "truth": -590,
+   "format": 2,
+   "cont": "-590\n</think>\n\n-590",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 750,
+   "op": "+",
+   "b": 816,
+   "truth": 1566,
+   "format": 3,
+   "cont": " 1566\nA: 750",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 357,
+   "op": "+",
+   "b": 370,
+   "truth": 727,
+   "format": 0,
+   "cont": "727\n357+370=",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 5,
+   "op": "+",
+   "b": 827,
+   "truth": 832,
+   "format": 1,
+   "cont": " 832\n832 + 12",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 170,
+   "op": "+",
+   "b": 36,
+   "truth": 206,
+   "format": 2,
+   "cont": "206\n</think>\n\n206",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 7,
+   "op": "-",
+   "b": 850,
+   "truth": -843,
+   "format": 3,
+   "cont": " -843\n7 - 850 =",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 171,
+   "op": "+",
+   "b": 91,
+   "truth": 262,
+   "format": 0,
+   "cont": "262\n171+91=2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 7,
+   "op": "-",
+   "b": 820,
+   "truth": -813,
+   "format": 1,
+   "cont": " -813\n-813 - 8",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 938,
+   "op": "+",
+   "b": 484,
+   "truth": 1422,
+   "format": 2,
+   "cont": "1422\n</think>\n\n938 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 2,
+   "op": "+",
+   "b": 135,
+   "truth": 137,
+   "format": 3,
+   "cont": " 137\nA: 137\n",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 566,
+   "op": "-",
+   "b": 645,
+   "truth": -79,
+   "format": 0,
+   "cont": "-79\n-79-100=",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 56,
+   "op": "-",
+   "b": 679,
+   "truth": -623,
+   "format": 1,
+   "cont": " -623\nSo, the result is -6",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 975,
+   "op": "-",
+   "b": 4,
+   "truth": 971,
+   "format": 2,
+   "cont": "971\n</think>\n\n975 - 4",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 107,
+   "op": "-",
+   "b": 373,
+   "truth": -266,
+   "format": 3,
+   "cont": " -266\nA: 107 -",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 677,
+   "op": "-",
+   "b": 440,
+   "truth": 237,
+   "format": 0,
+   "cont": "237\n677-440=",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 931,
+   "op": "+",
+   "b": 222,
+   "truth": 1153,
+   "format": 1,
+   "cont": " 1153\n931 + 2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 897,
+   "op": "+",
+   "b": 292,
+   "truth": 1189,
+   "format": 2,
+   "cont": "1189\n</think>\n\n897 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 893,
+   "op": "+",
+   "b": 499,
+   "truth": 1392,
+   "format": 3,
+   "cont": " 1392\nA: 893",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 288,
+   "op": "+",
+   "b": 727,
+   "truth": 1015,
+   "format": 0,
+   "cont": "1015\n288+727",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 173,
+   "op": "+",
+   "b": 653,
+   "truth": 826,
+   "format": 1,
+   "cont": " 826\n173 + 65",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 131,
+   "op": "-",
+   "b": 20,
+   "truth": 111,
+   "format": 2,
+   "cont": "111\n</think>\n\n131 - 2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 196,
+   "op": "+",
+   "b": 762,
+   "truth": 958,
+   "format": 3,
+   "cont": " 958\nA: 196 +",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 370,
+   "op": "+",
+   "b": 35,
+   "truth": 405,
+   "format": 0,
+   "cont": "405\n370+35=4",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 4,
+   "op": "-",
+   "b": 696,
+   "truth": -692,
+   "format": 1,
+   "cont": " -692\n-692 - 6",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 640,
+   "op": "+",
+   "b": 44,
+   "truth": 684,
+   "format": 2,
+   "cont": "684\n</think>\n\n640 + 4",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 6,
+   "op": "+",
+   "b": 471,
+   "truth": 477,
+   "format": 3,
+   "cont": " 477\nA: 6 + 4",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 603,
+   "op": "-",
+   "b": 715,
+   "truth": -112,
+   "format": 0,
+   "cont": "-112.5\n603-7",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 866,
+   "op": "-",
+   "b": 294,
+   "truth": 572,
+   "format": 1,
+   "cont": " 572\n572 - 29",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 268,
+   "op": "-",
+   "b": 2,
+   "truth": 266,
+   "format": 2,
+   "cont": "266\n</think>\n\n268 - 2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 132,
+   "op": "+",
+   "b": 315,
+   "truth": 447,
+   "format": 3,
+   "cont": " 447\nA: 132 +",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 651,
+   "op": "-",
+   "b": 576,
+   "truth": 75,
+   "format": 0,
+   "cont": "75\n651-576=7",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 9,
+   "op": "-",
+   "b": 275,
+   "truth": -266,
+   "format": 1,
+   "cont": " -266\nSo, the result is -2",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 626,
+   "op": "-",
+   "b": 540,
+   "truth": 86,
+   "format": 2,
+   "cont": "86\n</think>\n\n626 - 54",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 51,
+   "op": "+",
+   "b": 806,
+   "truth": 857,
+   "format": 3,
+   "cont": " 857\nA: 51 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 596,
+   "op": "-",
+   "b": 44,
+   "truth": 552,
+   "format": 0,
+   "cont": "552\n552-44=5",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 1,
+   "op": "-",
+   "b": 826,
+   "truth": -825,
+   "format": 1,
+   "cont": " -825\n-825 - 8",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 549,
+   "op": "-",
+   "b": 708,
+   "truth": -159,
+   "format": 2,
+   "cont": "-159\n</think>\n\n549 - ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 568,
+   "op": "-",
+   "b": 187,
+   "truth": 381,
+   "format": 3,
+   "cont": " 381\nA: 568 -",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 864,
+   "op": "+",
+   "b": 79,
+   "truth": 943,
+   "format": 0,
+   "cont": "943\n864+79=9",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 409,
+   "op": "+",
+   "b": 725,
+   "truth": 1134,
+   "format": 1,
+   "cont": " 1134\n1134 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 492,
+   "op": "+",
+   "b": 8,
+   "truth": 500,
+   "format": 2,
+   "cont": "500\n</think>\n\n492 + 8",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 493,
+   "op": "+",
+   "b": 593,
+   "truth": 1086,
+   "format": 3,
+   "cont": " 1086\nA: 493",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 427,
+   "op": "+",
+   "b": 3,
+   "truth": 430,
+   "format": 0,
+   "cont": "430\n430-2=42",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 78,
+   "op": "+",
+   "b": 271,
+   "truth": 349,
+   "format": 1,
+   "cont": " 349\n349 + 27",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 832,
+   "op": "-",
+   "b": 95,
+   "truth": 737,
+   "format": 2,
+   "cont": "737\n</think>\n\n737",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 59,
+   "op": "-",
+   "b": 378,
+   "truth": -319,
+   "format": 3,
+   "cont": " -319\nA: 59 - ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 312,
+   "op": "+",
+   "b": 99,
+   "truth": 411,
+   "format": 0,
+   "cont": "411\n312+99=4",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 789,
+   "op": "+",
+   "b": 686,
+   "truth": 1475,
+   "format": 1,
+   "cont": " 1475\n789 + 6",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 295,
+   "op": "+",
+   "b": 864,
+   "truth": 1159,
+   "format": 2,
+   "cont": "1159\n</think>\n\n295 + ",
+   "ok": true
+  },
+  {
+   "digits": 3,
+   "a": 605,
+   "op": "-",
+   "b": 441,
+   "truth": 164,
+   "format": 3,
+   "cont": " 164\nA: 605 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3076,
+   "op": "+",
+   "b": 5,
+   "truth": 3081,
+   "format": 0,
+   "cont": "3081\n3081-10",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7864,
+   "op": "+",
+   "b": 7107,
+   "truth": 14971,
+   "format": 1,
+   "cont": " 14971\n7864 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 8180,
+   "op": "-",
+   "b": 475,
+   "truth": 7705,
+   "format": 2,
+   "cont": "7705\n</think>\n\n7705",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6,
+   "op": "+",
+   "b": 3111,
+   "truth": 3117,
+   "format": 3,
+   "cont": " 3117\nA: 6 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7668,
+   "op": "+",
+   "b": 5113,
+   "truth": 12781,
+   "format": 0,
+   "cont": "12781\n7668+5",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9677,
+   "op": "-",
+   "b": 6935,
+   "truth": 2742,
+   "format": 1,
+   "cont": " 2742\n9677 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3957,
+   "op": "-",
+   "b": 2,
+   "truth": 3955,
+   "format": 2,
+   "cont": "3955\n</think>\n\n3957 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 18,
+   "op": "+",
+   "b": 9079,
+   "truth": 9097,
+   "format": 3,
+   "cont": " 9097\nA: 909",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4293,
+   "op": "+",
+   "b": 884,
+   "truth": 5177,
+   "format": 0,
+   "cont": "5177\n4293+88",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7664,
+   "op": "-",
+   "b": 5427,
+   "truth": 2237,
+   "format": 1,
+   "cont": " 2237\n7664 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 1471,
+   "op": "+",
+   "b": 23,
+   "truth": 1494,
+   "format": 2,
+   "cont": "1494\n</think>\n\n1471 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5482,
+   "op": "+",
+   "b": 8400,
+   "truth": 13882,
+   "format": 3,
+   "cont": " 13882\nA: 54",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5247,
+   "op": "-",
+   "b": 654,
+   "truth": 4593,
+   "format": 0,
+   "cont": "4593\n5247-65",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 12,
+   "op": "-",
+   "b": 6589,
+   "truth": -6577,
+   "format": 1,
+   "cont": " -6577\n12 - 65",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5272,
+   "op": "-",
+   "b": 496,
+   "truth": 4776,
+   "format": 2,
+   "cont": "4776\n</think>\n\n5272 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9,
+   "op": "-",
+   "b": 3905,
+   "truth": -3896,
+   "format": 3,
+   "cont": " -3896\nA: 9 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 2663,
+   "op": "+",
+   "b": 342,
+   "truth": 3005,
+   "format": 0,
+   "cont": "3005\n2663+34",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7,
+   "op": "-",
+   "b": 5536,
+   "truth": -5529,
+   "format": 1,
+   "cont": " -5529\nSo, the result is -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7382,
+   "op": "-",
+   "b": 6,
+   "truth": 7376,
+   "format": 2,
+   "cont": "7376\n</think>\n\n7382 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3687,
+   "op": "+",
+   "b": 8807,
+   "truth": 12494,
+   "format": 3,
+   "cont": " 12494\nA: 36",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6733,
+   "op": "-",
+   "b": 996,
+   "truth": 5737,
+   "format": 0,
+   "cont": "5737\n\nLet me check the calculation again:\n\n",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7,
+   "op": "+",
+   "b": 9488,
+   "truth": 9495,
+   "format": 1,
+   "cont": " 9495\n9495 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9733,
+   "op": "-",
+   "b": 910,
+   "truth": 8823,
+   "format": 2,
+   "cont": "8823\n</think>\n\n8823",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 644,
+   "op": "-",
+   "b": 8675,
+   "truth": -8031,
+   "format": 3,
+   "cont": " -8031\nA: 644",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6343,
+   "op": "-",
+   "b": 9,
+   "truth": 6334,
+   "format": 0,
+   "cont": "6334\n6343-9=",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 661,
+   "op": "+",
+   "b": 6688,
+   "truth": 7349,
+   "format": 1,
+   "cont": " 7349\n661 + 6",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4818,
+   "op": "-",
+   "b": 88,
+   "truth": 4730,
+   "format": 2,
+   "cont": "4730\n</think>\n\n4818 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4,
+   "op": "-",
+   "b": 7905,
+   "truth": -7901,
+   "format": 3,
+   "cont": " -7901\nA: 4 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7820,
+   "op": "+",
+   "b": 616,
+   "truth": 8436,
+   "format": 0,
+   "cont": "8436\n7820+61",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4635,
+   "op": "-",
+   "b": 7399,
+   "truth": -2764,
+   "format": 1,
+   "cont": " -2764\n4635 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3275,
+   "op": "-",
+   "b": 955,
+   "truth": 2320,
+   "format": 2,
+   "cont": "2320\n</think>\n\n2320",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4511,
+   "op": "-",
+   "b": 4305,
+   "truth": 206,
+   "format": 3,
+   "cont": " 206\nA: 4511",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9108,
+   "op": "+",
+   "b": 9,
+   "truth": 9117,
+   "format": 0,
+   "cont": "9117\n9117+9=",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4,
+   "op": "+",
+   "b": 1280,
+   "truth": 1284,
+   "format": 1,
+   "cont": " 1284\n1284 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7517,
+   "op": "-",
+   "b": 436,
+   "truth": 7081,
+   "format": 2,
+   "cont": "7081\n</think>\n\n7517 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 20,
+   "op": "+",
+   "b": 9353,
+   "truth": 9373,
+   "format": 3,
+   "cont": " 9373\nA: 20 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7069,
+   "op": "-",
+   "b": 3655,
+   "truth": 3414,
+   "format": 0,
+   "cont": "3414\n7069-34",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 188,
+   "op": "+",
+   "b": 6867,
+   "truth": 7055,
+   "format": 1,
+   "cont": " 7055\n188 + 6",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 8215,
+   "op": "-",
+   "b": 9196,
+   "truth": -981,
+   "format": 2,
+   "cont": "-981\n</think>\n\n-981",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 26,
+   "op": "-",
+   "b": 6227,
+   "truth": -6201,
+   "format": 3,
+   "cont": " -6201\nA: 26 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9943,
+   "op": "-",
+   "b": 48,
+   "truth": 9895,
+   "format": 0,
+   "cont": "9895\n9943-48",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 32,
+   "op": "-",
+   "b": 4705,
+   "truth": -4673,
+   "format": 1,
+   "cont": " -4673\nSo, the result is -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7677,
+   "op": "+",
+   "b": 26,
+   "truth": 7703,
+   "format": 2,
+   "cont": "7703\n</think>\n\n7677 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 262,
+   "op": "+",
+   "b": 9900,
+   "truth": 10162,
+   "format": 3,
+   "cont": " 10162\nA: 26",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3537,
+   "op": "+",
+   "b": 616,
+   "truth": 4153,
+   "format": 0,
+   "cont": "4153\n3537+61",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 809,
+   "op": "+",
+   "b": 8018,
+   "truth": 8827,
+   "format": 1,
+   "cont": " 8827\n809 + 8",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6640,
+   "op": "-",
+   "b": 8,
+   "truth": 6632,
+   "format": 2,
+   "cont": "6632\n</think>\n\n6640 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 66,
+   "op": "-",
+   "b": 2599,
+   "truth": -2533,
+   "format": 3,
+   "cont": " -2533\nA: 66 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3800,
+   "op": "+",
+   "b": 88,
+   "truth": 3888,
+   "format": 0,
+   "cont": "3888\n3888+88",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 194,
+   "op": "+",
+   "b": 1492,
+   "truth": 1686,
+   "format": 1,
+   "cont": " 1686\n194 + 1",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 2169,
+   "op": "-",
+   "b": 32,
+   "truth": 2137,
+   "format": 2,
+   "cont": "2137\n</think>\n\n2169 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 16,
+   "op": "-",
+   "b": 6559,
+   "truth": -6543,
+   "format": 3,
+   "cont": " -6543\nA: 16 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 8672,
+   "op": "+",
+   "b": 584,
+   "truth": 9256,
+   "format": 0,
+   "cont": "9256\n8672+58",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 8,
+   "op": "-",
+   "b": 6163,
+   "truth": -6155,
+   "format": 1,
+   "cont": " -6155\nSo, the result is -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6069,
+   "op": "+",
+   "b": 159,
+   "truth": 6228,
+   "format": 2,
+   "cont": "6228\n</think>\n\n6069 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5230,
+   "op": "-",
+   "b": 1018,
+   "truth": 4212,
+   "format": 3,
+   "cont": " 4212\nA: 523",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5266,
+   "op": "+",
+   "b": 9,
+   "truth": 5275,
+   "format": 0,
+   "cont": "5275\n5275+9=",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 2098,
+   "op": "-",
+   "b": 8921,
+   "truth": -6823,
+   "format": 1,
+   "cont": " -6823\n2098 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9287,
+   "op": "-",
+   "b": 8775,
+   "truth": 512,
+   "format": 2,
+   "cont": "512\n</think>\n\n9287 minus ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 679,
+   "op": "+",
+   "b": 1704,
+   "truth": 2383,
+   "format": 3,
+   "cont": " 2383\nA: 679",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7479,
+   "op": "-",
+   "b": 84,
+   "truth": 7395,
+   "format": 0,
+   "cont": "7395\n7479-84",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 601,
+   "op": "-",
+   "b": 1516,
+   "truth": -915,
+   "format": 1,
+   "cont": " -915\n601 - 15",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7855,
+   "op": "-",
+   "b": 37,
+   "truth": 7818,
+   "format": 2,
+   "cont": "7818\n</think>\n\n7855 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 207,
+   "op": "-",
+   "b": 4493,
+   "truth": -4286,
+   "format": 3,
+   "cont": " -4286\nA: 207",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4990,
+   "op": "-",
+   "b": 692,
+   "truth": 4298,
+   "format": 0,
+   "cont": "4298\n4298-20",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 2,
+   "op": "+",
+   "b": 2906,
+   "truth": 2908,
+   "format": 1,
+   "cont": " 2908\n2908 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3370,
+   "op": "+",
+   "b": 7615,
+   "truth": 10985,
+   "format": 2,
+   "cont": "10985\n</think>\n\n3370",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 39,
+   "op": "+",
+   "b": 3689,
+   "truth": 3728,
+   "format": 3,
+   "cont": " 3728\nA: 39 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 2090,
+   "op": "+",
+   "b": 44,
+   "truth": 2134,
+   "format": 0,
+   "cont": "2134\n2134+12",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 318,
+   "op": "+",
+   "b": 5890,
+   "truth": 6208,
+   "format": 1,
+   "cont": " 6208\n318 * 5",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7960,
+   "op": "-",
+   "b": 6,
+   "truth": 7954,
+   "format": 2,
+   "cont": "7954\n</think>\n\n7960 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 633,
+   "op": "+",
+   "b": 7459,
+   "truth": 8092,
+   "format": 3,
+   "cont": " 8092\nA: 633",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7335,
+   "op": "-",
+   "b": 7,
+   "truth": 7328,
+   "format": 0,
+   "cont": "7328\n7335-7=",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5506,
+   "op": "-",
+   "b": 5866,
+   "truth": -360,
+   "format": 1,
+   "cont": " -360\n5506 - 5",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5468,
+   "op": "-",
+   "b": 34,
+   "truth": 5434,
+   "format": 2,
+   "cont": "5434\n</think>\n\n5468 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 80,
+   "op": "-",
+   "b": 4154,
+   "truth": -4074,
+   "format": 3,
+   "cont": " -4074\nA: 80 -",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 8094,
+   "op": "-",
+   "b": 246,
+   "truth": 7848,
+   "format": 0,
+   "cont": "7848\n8094-24",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4584,
+   "op": "+",
+   "b": 5263,
+   "truth": 9847,
+   "format": 1,
+   "cont": " 9847\n4584 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 1387,
+   "op": "+",
+   "b": 3483,
+   "truth": 4870,
+   "format": 2,
+   "cont": "4870\n</think>\n\n1387 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9,
+   "op": "-",
+   "b": 6699,
+   "truth": -6690,
+   "format": 3,
+   "cont": " -6690\nA: 9 - ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 9549,
+   "op": "-",
+   "b": 1438,
+   "truth": 8111,
+   "format": 0,
+   "cont": "8111\n9549-14",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 29,
+   "op": "+",
+   "b": 2024,
+   "truth": 2053,
+   "format": 1,
+   "cont": " 2053\n29 + 20",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 4245,
+   "op": "+",
+   "b": 3687,
+   "truth": 7932,
+   "format": 2,
+   "cont": "7932\n</think>\n\n4245 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 7,
+   "op": "+",
+   "b": 5771,
+   "truth": 5778,
+   "format": 3,
+   "cont": " 5778\nA: 7 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 3385,
+   "op": "+",
+   "b": 8,
+   "truth": 3393,
+   "format": 0,
+   "cont": "3393\n3393+8=",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 834,
+   "op": "-",
+   "b": 7257,
+   "truth": -6423,
+   "format": 1,
+   "cont": " -6423\n834 - 7",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6432,
+   "op": "+",
+   "b": 6,
+   "truth": 6438,
+   "format": 2,
+   "cont": "6438\n</think>\n\n6432 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5917,
+   "op": "-",
+   "b": 3213,
+   "truth": 2704,
+   "format": 3,
+   "cont": " 2704\nA: 591",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5953,
+   "op": "+",
+   "b": 25,
+   "truth": 5978,
+   "format": 0,
+   "cont": "5978\n5978+25",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 22,
+   "op": "-",
+   "b": 5269,
+   "truth": -5247,
+   "format": 1,
+   "cont": " -5247\n22 - 52",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5461,
+   "op": "+",
+   "b": 4191,
+   "truth": 9652,
+   "format": 2,
+   "cont": "9652\n</think>\n\n5461 +",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 846,
+   "op": "-",
+   "b": 2095,
+   "truth": -1249,
+   "format": 3,
+   "cont": " -1249\nA: 846",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5609,
+   "op": "-",
+   "b": 7,
+   "truth": 5602,
+   "format": 0,
+   "cont": "5602\n5602-7=",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 625,
+   "op": "-",
+   "b": 4660,
+   "truth": -4035,
+   "format": 1,
+   "cont": " -4035\n625 - 4",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 8105,
+   "op": "-",
+   "b": 597,
+   "truth": 7508,
+   "format": 2,
+   "cont": "7508\n</think>\n\n7508",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 6,
+   "op": "+",
+   "b": 7529,
+   "truth": 7535,
+   "format": 3,
+   "cont": " 7535\nA: 6 + ",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 1303,
+   "op": "-",
+   "b": 73,
+   "truth": 1230,
+   "format": 0,
+   "cont": "1230\n1303-73",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 972,
+   "op": "-",
+   "b": 3119,
+   "truth": -2147,
+   "format": 1,
+   "cont": " -2147\n972 - 3",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 5743,
+   "op": "-",
+   "b": 56,
+   "truth": 5687,
+   "format": 2,
+   "cont": "5687\n</think>\n\n5743 minus",
+   "ok": true
+  },
+  {
+   "digits": 4,
+   "a": 39,
+   "op": "+",
+   "b": 7304,
+   "truth": 7343,
+   "format": 3,
+   "cont": " 7343\nA: 39 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 55699,
+   "op": "+",
+   "b": 35,
+   "truth": 55734,
+   "format": 0,
+   "cont": "55734\n55734+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 196,
+   "op": "-",
+   "b": 27665,
+   "truth": -27469,
+   "format": 1,
+   "cont": " -27469\n196 - ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 65207,
+   "op": "+",
+   "b": 72667,
+   "truth": 137874,
+   "format": 2,
+   "cont": "137874\n</think>\n\n652",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 0,
+   "op": "+",
+   "b": 23730,
+   "truth": 23730,
+   "format": 3,
+   "cont": " 23730\nA: 0 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 22325,
+   "op": "+",
+   "b": 65494,
+   "truth": 87819,
+   "format": 0,
+   "cont": "87819\n22325+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 36,
+   "op": "-",
+   "b": 49106,
+   "truth": -49070,
+   "format": 1,
+   "cont": " -49070\nSo, the result is",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 26951,
+   "op": "+",
+   "b": 5,
+   "truth": 26956,
+   "format": 2,
+   "cont": "26956\n</think>\n\n2695",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 70406,
+   "op": "-",
+   "b": 13706,
+   "truth": 56700,
+   "format": 3,
+   "cont": " 56700\nA: 70",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 47885,
+   "op": "+",
+   "b": 63723,
+   "truth": 111608,
+   "format": 0,
+   "cont": "111608\n47885",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 3924,
+   "op": "-",
+   "b": 88336,
+   "truth": -84412,
+   "format": 1,
+   "cont": " -84412\n3924 -",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 78622,
+   "op": "+",
+   "b": 1215,
+   "truth": 79837,
+   "format": 2,
+   "cont": "79837\n</think>\n\n7862",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 377,
+   "op": "-",
+   "b": 89264,
+   "truth": -88887,
+   "format": 3,
+   "cont": " -88887\nA: 37",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 32605,
+   "op": "+",
+   "b": 24912,
+   "truth": 57517,
+   "format": 0,
+   "cont": "57517\n32605+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 5,
+   "op": "+",
+   "b": 41206,
+   "truth": 41211,
+   "format": 1,
+   "cont": " 41211\n41211",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 79906,
+   "op": "-",
+   "b": 3322,
+   "truth": 76584,
+   "format": 2,
+   "cont": "76584\n</think>\n\n7990",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 7673,
+   "op": "-",
+   "b": 79444,
+   "truth": -71771,
+   "format": 3,
+   "cont": " -71771\nQ: What is ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 52340,
+   "op": "-",
+   "b": 2,
+   "truth": 52338,
+   "format": 0,
+   "cont": "52338\n52340-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 3180,
+   "op": "+",
+   "b": 34074,
+   "truth": 37254,
+   "format": 1,
+   "cont": " 37254\n37254",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 61635,
+   "op": "-",
+   "b": 3,
+   "truth": 61632,
+   "format": 2,
+   "cont": "61632\n</think>\n\n6163",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 950,
+   "op": "+",
+   "b": 46049,
+   "truth": 46999,
+   "format": 3,
+   "cont": " 46999\nA: 95",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 58406,
+   "op": "+",
+   "b": 7,
+   "truth": 58413,
+   "format": 0,
+   "cont": "58413\n58413+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 5,
+   "op": "-",
+   "b": 72419,
+   "truth": -72414,
+   "format": 1,
+   "cont": " -72414\nSo, the result is",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 66100,
+   "op": "+",
+   "b": 32806,
+   "truth": 98906,
+   "format": 2,
+   "cont": "98906\n</think>\n\n9890",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 3554,
+   "op": "-",
+   "b": 99605,
+   "truth": -96051,
+   "format": 3,
+   "cont": " -96051\nA: 35",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 75941,
+   "op": "-",
+   "b": 98922,
+   "truth": -22981,
+   "format": 0,
+   "cont": "-22981.5\n759",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 926,
+   "op": "-",
+   "b": 88347,
+   "truth": -87421,
+   "format": 1,
+   "cont": " -87421\n926 - ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 64706,
+   "op": "-",
+   "b": 61306,
+   "truth": 3400,
+   "format": 2,
+   "cont": "3400\n</think>\n\n00000",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 95,
+   "op": "+",
+   "b": 32518,
+   "truth": 32613,
+   "format": 3,
+   "cont": " 32613\nA: 95",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 68724,
+   "op": "-",
+   "b": 29,
+   "truth": 68695,
+   "format": 0,
+   "cont": "68695\n68724-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 98156,
+   "op": "+",
+   "b": 57968,
+   "truth": 156124,
+   "format": 1,
+   "cont": " 156124\n\nLet me check the",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 70141,
+   "op": "-",
+   "b": 11147,
+   "truth": 58994,
+   "format": 2,
+   "cont": "58994\n</think>\n\n5899",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 65898,
+   "op": "-",
+   "b": 36091,
+   "truth": 29807,
+   "format": 3,
+   "cont": " 29807\nA: 65",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 49798,
+   "op": "+",
+   "b": 90468,
+   "truth": 140266,
+   "format": 0,
+   "cont": "140266\n49798",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 6,
+   "op": "+",
+   "b": 78907,
+   "truth": 78913,
+   "format": 1,
+   "cont": " 78913\n78913",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 22382,
+   "op": "-",
+   "b": 85,
+   "truth": 22297,
+   "format": 2,
+   "cont": "22297\n</think>\n\n2238",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 152,
+   "op": "+",
+   "b": 74788,
+   "truth": 74940,
+   "format": 3,
+   "cont": " 74940\nA: 15",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 48496,
+   "op": "-",
+   "b": 72849,
+   "truth": -24353,
+   "format": 0,
+   "cont": "-24353\n48496",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 8265,
+   "op": "+",
+   "b": 36156,
+   "truth": 44421,
+   "format": 1,
+   "cont": " 44421\n8265 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 32964,
+   "op": "-",
+   "b": 3,
+   "truth": 32961,
+   "format": 2,
+   "cont": "32961\n</think>\n\n3296",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 37748,
+   "op": "-",
+   "b": 26798,
+   "truth": 10950,
+   "format": 3,
+   "cont": " 10950\nA: 37",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 18273,
+   "op": "-",
+   "b": 49896,
+   "truth": -31623,
+   "format": 0,
+   "cont": "-31623.14\n18",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 317,
+   "op": "+",
+   "b": 87885,
+   "truth": 88202,
+   "format": 1,
+   "cont": " 88202\n317 + ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 83643,
+   "op": "+",
+   "b": 38319,
+   "truth": 121962,
+   "format": 2,
+   "cont": "121962\n</think>\n\n836",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 14410,
+   "op": "+",
+   "b": 15195,
+   "truth": 29605,
+   "format": 3,
+   "cont": " 29605\nA: 14",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 39783,
+   "op": "+",
+   "b": 685,
+   "truth": 40468,
+   "format": 0,
+   "cont": "40468\n39783+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 86,
+   "op": "+",
+   "b": 55026,
+   "truth": 55112,
+   "format": 1,
+   "cont": " 55112\n86 + 5",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 31409,
+   "op": "-",
+   "b": 59721,
+   "truth": -28312,
+   "format": 2,
+   "cont": "-28312\n</think>\n\n-28",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 154,
+   "op": "-",
+   "b": 73918,
+   "truth": -73764,
+   "format": 3,
+   "cont": " -73764\nA: 15",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 34386,
+   "op": "-",
+   "b": 607,
+   "truth": 33779,
+   "format": 0,
+   "cont": "33779\n34386-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 753,
+   "op": "+",
+   "b": 12921,
+   "truth": 13674,
+   "format": 1,
+   "cont": " 13674\n753 + ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 76786,
+   "op": "-",
+   "b": 32,
+   "truth": 76754,
+   "format": 2,
+   "cont": "76754\n</think>\n\n7678",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 9,
+   "op": "+",
+   "b": 40594,
+   "truth": 40603,
+   "format": 3,
+   "cont": " 40603\nA: 9 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 15543,
+   "op": "-",
+   "b": 2,
+   "truth": 15541,
+   "format": 0,
+   "cont": "15541\n15543-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 460,
+   "op": "+",
+   "b": 33848,
+   "truth": 34308,
+   "format": 1,
+   "cont": " 34308\n34308",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 14849,
+   "op": "+",
+   "b": 8087,
+   "truth": 22936,
+   "format": 2,
+   "cont": "22936\n</think>\n\n2293",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 360,
+   "op": "+",
+   "b": 51910,
+   "truth": 52270,
+   "format": 3,
+   "cont": " 52270\nA: 36",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 62603,
+   "op": "+",
+   "b": 24,
+   "truth": 62627,
+   "format": 0,
+   "cont": "62627\n62627+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 31638,
+   "op": "+",
+   "b": 51702,
+   "truth": 83340,
+   "format": 1,
+   "cont": " 83340\n31638",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 18575,
+   "op": "+",
+   "b": 34,
+   "truth": 18609,
+   "format": 2,
+   "cont": "18609\n</think>\n\n1857",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 1246,
+   "op": "-",
+   "b": 51369,
+   "truth": -50123,
+   "format": 3,
+   "cont": " -50123\nA: 12",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 64256,
+   "op": "+",
+   "b": 609,
+   "truth": 64865,
+   "format": 0,
+   "cont": "64865\n64256+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 7145,
+   "op": "+",
+   "b": 76356,
+   "truth": 83501,
+   "format": 1,
+   "cont": " 83501\n7145 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 35089,
+   "op": "+",
+   "b": 876,
+   "truth": 35965,
+   "format": 2,
+   "cont": "35965\n</think>\n\n3508",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 92,
+   "op": "-",
+   "b": 59475,
+   "truth": -59383,
+   "format": 3,
+   "cont": " -59383\nA: 92",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 77679,
+   "op": "-",
+   "b": 6,
+   "truth": 77673,
+   "format": 0,
+   "cont": "77673\n77679-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 3314,
+   "op": "+",
+   "b": 66740,
+   "truth": 70054,
+   "format": 1,
+   "cont": " 70054\n3314 *",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 45997,
+   "op": "-",
+   "b": 20,
+   "truth": 45977,
+   "format": 2,
+   "cont": "45977\n</think>\n\n4599",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 7,
+   "op": "+",
+   "b": 34386,
+   "truth": 34393,
+   "format": 3,
+   "cont": " 34393\nA: 7 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 57740,
+   "op": "-",
+   "b": 5,
+   "truth": 57735,
+   "format": 0,
+   "cont": "57735\n57740-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 33343,
+   "op": "-",
+   "b": 96650,
+   "truth": -63307,
+   "format": 1,
+   "cont": " -63307\n33343",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 43756,
+   "op": "-",
+   "b": 357,
+   "truth": 43399,
+   "format": 2,
+   "cont": "43399\n</think>\n\n4375",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 9,
+   "op": "+",
+   "b": 98192,
+   "truth": 98201,
+   "format": 3,
+   "cont": " 98201\nA: 9 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 37673,
+   "op": "+",
+   "b": 85524,
+   "truth": 123197,
+   "format": 0,
+   "cont": "123197\n37673",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 5053,
+   "op": "+",
+   "b": 97383,
+   "truth": 102436,
+   "format": 1,
+   "cont": " 102436\n5053",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 44424,
+   "op": "-",
+   "b": 28742,
+   "truth": 15682,
+   "format": 2,
+   "cont": "15682\n</think>\n\n1568",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 18,
+   "op": "+",
+   "b": 47164,
+   "truth": 47182,
+   "format": 3,
+   "cont": " 47182\nA: 18",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 87472,
+   "op": "+",
+   "b": 29,
+   "truth": 87501,
+   "format": 0,
+   "cont": "87501\n87501-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 1926,
+   "op": "+",
+   "b": 87189,
+   "truth": 89115,
+   "format": 1,
+   "cont": " 89115\n1926 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 99829,
+   "op": "+",
+   "b": 3,
+   "truth": 99832,
+   "format": 2,
+   "cont": "99832\n</think>\n\n9982",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 6374,
+   "op": "-",
+   "b": 30226,
+   "truth": -23852,
+   "format": 3,
+   "cont": " -23852\nA: 63",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 58158,
+   "op": "+",
+   "b": 83780,
+   "truth": 141938,
+   "format": 0,
+   "cont": "141938\n58158",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 933,
+   "op": "+",
+   "b": 16344,
+   "truth": 17277,
+   "format": 1,
+   "cont": " 17277\n933 + ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 19303,
+   "op": "-",
+   "b": 676,
+   "truth": 18627,
+   "format": 2,
+   "cont": "18627\n</think>\n\n1930",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 9,
+   "op": "-",
+   "b": 96496,
+   "truth": -96487,
+   "format": 3,
+   "cont": " -96487\nA: 9 -",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 89278,
+   "op": "-",
+   "b": 7,
+   "truth": 89271,
+   "format": 0,
+   "cont": "89271\n89278-",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 3893,
+   "op": "+",
+   "b": 33791,
+   "truth": 37684,
+   "format": 1,
+   "cont": " 37684\n3893 +",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 57351,
+   "op": "-",
+   "b": 71454,
+   "truth": -14103,
+   "format": 2,
+   "cont": "-14103\n</think>\n\n-14",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 2928,
+   "op": "+",
+   "b": 86637,
+   "truth": 89565,
+   "format": 3,
+   "cont": " 89565\nA: 29",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 90451,
+   "op": "-",
+   "b": 7539,
+   "truth": 82912,
+   "format": 0,
+   "cont": "82912.5\n9045",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 2,
+   "op": "-",
+   "b": 65769,
+   "truth": -65767,
+   "format": 1,
+   "cont": " -65767\nSo, the result is",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 73343,
+   "op": "+",
+   "b": 55231,
+   "truth": 128574,
+   "format": 2,
+   "cont": "128574\n</think>\n\n733",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 29990,
+   "op": "-",
+   "b": 32656,
+   "truth": -2666,
+   "format": 3,
+   "cont": " -2666\nI think the answer is -",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 44723,
+   "op": "+",
+   "b": 10,
+   "truth": 44733,
+   "format": 0,
+   "cont": "44733\n44723+",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 96,
+   "op": "-",
+   "b": 27272,
+   "truth": -27176,
+   "format": 1,
+   "cont": " -27176\nSo, the result is",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 50663,
+   "op": "-",
+   "b": 3273,
+   "truth": 47390,
+   "format": 2,
+   "cont": "47390\n</think>\n\n4739",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 680,
+   "op": "-",
+   "b": 30591,
+   "truth": -29911,
+   "format": 3,
+   "cont": " -29911\nQ: What is ",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 85531,
+   "op": "-",
+   "b": 15029,
+   "truth": 70502,
+   "format": 0,
+   "cont": "70502.5\n\nLet me check if",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 34186,
+   "op": "+",
+   "b": 83743,
+   "truth": 117929,
+   "format": 1,
+   "cont": " 117929\n3418",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 51060,
+   "op": "+",
+   "b": 267,
+   "truth": 51327,
+   "format": 2,
+   "cont": "51327\n</think>\n\n5106",
+   "ok": true
+  },
+  {
+   "digits": 5,
+   "a": 79537,
+   "op": "-",
+   "b": 40345,
+   "truth": 39192,
+   "format": 3,
+   "cont": " 39192\nA: 79",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 689848,
+   "op": "-",
+   "b": 1,
+   "truth": 689847,
+   "format": 0,
+   "cont": "689847\n68984",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 775618,
+   "op": "+",
+   "b": 437513,
+   "truth": 1213131,
+   "format": 1,
+   "cont": " 1213131\n775",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 361185,
+   "op": "-",
+   "b": 52910,
+   "truth": 308275,
+   "format": 2,
+   "cont": "308275\n</think>\n\n361",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 64496,
+   "op": "-",
+   "b": 631085,
+   "truth": -566589,
+   "format": 3,
+   "cont": " -566589\nQ: What is",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 680107,
+   "op": "+",
+   "b": 2,
+   "truth": 680109,
+   "format": 0,
+   "cont": "680109\n68010",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 2,
+   "op": "-",
+   "b": 764763,
+   "truth": -764761,
+   "format": 1,
+   "cont": " -764761\nSo, the result",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 108001,
+   "op": "-",
+   "b": 9444,
+   "truth": 98557,
+   "format": 2,
+   "cont": "98557\n</think>\n\n9855",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 670,
+   "op": "-",
+   "b": 249823,
+   "truth": -249153,
+   "format": 3,
+   "cont": " -249153\nA: 6",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 759445,
+   "op": "+",
+   "b": 62,
+   "truth": 759507,
+   "format": 0,
+   "cont": "759507\n75950",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 93,
+   "op": "+",
+   "b": 948356,
+   "truth": 948449,
+   "format": 1,
+   "cont": " 948449\n9484",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 735973,
+   "op": "+",
+   "b": 1,
+   "truth": 735974,
+   "format": 2,
+   "cont": "735974\n</think>\n\n735",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 885,
+   "op": "+",
+   "b": 676397,
+   "truth": 677282,
+   "format": 3,
+   "cont": " 677282\nA: 8",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 210200,
+   "op": "+",
+   "b": 279,
+   "truth": 210479,
+   "format": 0,
+   "cont": "210479\n21020",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 145,
+   "op": "+",
+   "b": 305720,
+   "truth": 305865,
+   "format": 1,
+   "cont": " 305865\n3058",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 879706,
+   "op": "+",
+   "b": 0,
+   "truth": 879706,
+   "format": 2,
+   "cont": "879706\n</think>\n\n879",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 6532,
+   "op": "+",
+   "b": 809168,
+   "truth": 815700,
+   "format": 3,
+   "cont": " 815700\nA: 6",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 960281,
+   "op": "-",
+   "b": 67232,
+   "truth": 893049,
+   "format": 0,
+   "cont": "893049\n96028",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 684555,
+   "op": "-",
+   "b": 667222,
+   "truth": 17333,
+   "format": 1,
+   "cont": " 17333\n68455",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 288039,
+   "op": "-",
+   "b": 8,
+   "truth": 288031,
+   "format": 2,
+   "cont": "288031\n</think>\n\n288",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 929,
+   "op": "+",
+   "b": 877227,
+   "truth": 878156,
+   "format": 3,
+   "cont": " 878156\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 409099,
+   "op": "-",
+   "b": 48873,
+   "truth": 360226,
+   "format": 0,
+   "cont": "360226\n40909",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 7,
+   "op": "-",
+   "b": 584137,
+   "truth": -584130,
+   "format": 1,
+   "cont": " -584130\nSo, the result",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 344661,
+   "op": "-",
+   "b": 16796,
+   "truth": 327865,
+   "format": 2,
+   "cont": "327865\n</think>\n\n327",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 3,
+   "op": "-",
+   "b": 373014,
+   "truth": -373011,
+   "format": 3,
+   "cont": " -373011\nA: 3",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 790000,
+   "op": "-",
+   "b": 55,
+   "truth": 789945,
+   "format": 0,
+   "cont": "789945\n78994",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 65,
+   "op": "-",
+   "b": 441162,
+   "truth": -441097,
+   "format": 1,
+   "cont": " -441097\n65 - ",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 276749,
+   "op": "+",
+   "b": 210,
+   "truth": 276959,
+   "format": 2,
+   "cont": "276959\n</think>\n\n276",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 8408,
+   "op": "+",
+   "b": 204559,
+   "truth": 212967,
+   "format": 3,
+   "cont": " 212967\nA: 2",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 754099,
+   "op": "-",
+   "b": 464,
+   "truth": 753635,
+   "format": 0,
+   "cont": "753635\n\nLet me check the calculation",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 8294,
+   "op": "-",
+   "b": 703381,
+   "truth": -695087,
+   "format": 1,
+   "cont": " -695087\nSo, the result",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 693735,
+   "op": "-",
+   "b": 51854,
+   "truth": 641881,
+   "format": 2,
+   "cont": "641881\n</think>\n\n641",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 420638,
+   "op": "+",
+   "b": 480348,
+   "truth": 900986,
+   "format": 3,
+   "cont": " 900986\nA: 4",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 177443,
+   "op": "+",
+   "b": 6162,
+   "truth": 183605,
+   "format": 0,
+   "cont": "183605\n17744",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 6,
+   "op": "+",
+   "b": 460225,
+   "truth": 460231,
+   "format": 1,
+   "cont": " 460231\n\nSo, the sum",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 631888,
+   "op": "-",
+   "b": 62720,
+   "truth": 569168,
+   "format": 2,
+   "cont": "569168\n</think>\n\n569",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 5968,
+   "op": "+",
+   "b": 649539,
+   "truth": 655507,
+   "format": 3,
+   "cont": " 655507\nA: 5",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 964490,
+   "op": "+",
+   "b": 8,
+   "truth": 964498,
+   "format": 0,
+   "cont": "964498\n96449",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 467,
+   "op": "-",
+   "b": 816596,
+   "truth": -816129,
+   "format": 1,
+   "cont": " -816129\n467 -",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 176599,
+   "op": "+",
+   "b": 1,
+   "truth": 176600,
+   "format": 2,
+   "cont": "176600\n</think>\n\n176",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 5,
+   "op": "+",
+   "b": 660429,
+   "truth": 660434,
+   "format": 3,
+   "cont": " 660434\nA: 5",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 388780,
+   "op": "+",
+   "b": 60,
+   "truth": 388840,
+   "format": 0,
+   "cont": "388840\n38878",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 84,
+   "op": "+",
+   "b": 910841,
+   "truth": 910925,
+   "format": 1,
+   "cont": " 910925\nSo, the sum",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 948136,
+   "op": "+",
+   "b": 836,
+   "truth": 948972,
+   "format": 2,
+   "cont": "948972\n</think>\n\n948",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 85,
+   "op": "-",
+   "b": 148138,
+   "truth": -148053,
+   "format": 3,
+   "cont": " -148053\nA: 8",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 660953,
+   "op": "+",
+   "b": 98,
+   "truth": 661051,
+   "format": 0,
+   "cont": "661051\n66105",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 366,
+   "op": "-",
+   "b": 716790,
+   "truth": -716424,
+   "format": 1,
+   "cont": " -716424\nSo, the result",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 165563,
+   "op": "+",
+   "b": 270868,
+   "truth": 436431,
+   "format": 2,
+   "cont": "436431\n</think>\n\n165",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 51965,
+   "op": "-",
+   "b": 562362,
+   "truth": -510397,
+   "format": 3,
+   "cont": " -510397\nA: 5",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 635650,
+   "op": "+",
+   "b": 7603,
+   "truth": 643253,
+   "format": 0,
+   "cont": "643253\n63565",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 566124,
+   "op": "-",
+   "b": 236034,
+   "truth": 330090,
+   "format": 1,
+   "cont": " 330090\n\nLet me check the",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 690889,
+   "op": "-",
+   "b": 6,
+   "truth": 690883,
+   "format": 2,
+   "cont": "690883\n</think>\n\n690",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 90859,
+   "op": "+",
+   "b": 155458,
+   "truth": 246317,
+   "format": 3,
+   "cont": " 246317\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 784562,
+   "op": "-",
+   "b": 7851,
+   "truth": 776711,
+   "format": 0,
+   "cont": "776711\n78456",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 72073,
+   "op": "-",
+   "b": 617764,
+   "truth": -545691,
+   "format": 1,
+   "cont": " -545691\n7207",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 139404,
+   "op": "-",
+   "b": 8,
+   "truth": 139396,
+   "format": 2,
+   "cont": "139396\n</think>\n\n139",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 298632,
+   "op": "-",
+   "b": 420149,
+   "truth": -121517,
+   "format": 3,
+   "cont": " -121517\nA: 2",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 233398,
+   "op": "+",
+   "b": 684155,
+   "truth": 917553,
+   "format": 0,
+   "cont": "917553\n23339",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 697623,
+   "op": "-",
+   "b": 378125,
+   "truth": 319498,
+   "format": 1,
+   "cont": " 319498\n\nLet me check the",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 709520,
+   "op": "+",
+   "b": 146,
+   "truth": 709666,
+   "format": 2,
+   "cont": "709666\n</think>\n\n709",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 86,
+   "op": "-",
+   "b": 155796,
+   "truth": -155710,
+   "format": 3,
+   "cont": " -155710\nA: 8",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 697186,
+   "op": "+",
+   "b": 954,
+   "truth": 698140,
+   "format": 0,
+   "cont": "698140\n69718",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 5,
+   "op": "+",
+   "b": 287272,
+   "truth": 287277,
+   "format": 1,
+   "cont": " 287277\n2872",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 152102,
+   "op": "-",
+   "b": 9,
+   "truth": 152093,
+   "format": 2,
+   "cont": "152093\n</think>\n\n152",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 95631,
+   "op": "+",
+   "b": 819171,
+   "truth": 914802,
+   "format": 3,
+   "cont": " 914802\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 617916,
+   "op": "-",
+   "b": 62192,
+   "truth": 555724,
+   "format": 0,
+   "cont": "555724\n\nLet me check the calculation",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 145105,
+   "op": "+",
+   "b": 126948,
+   "truth": 272053,
+   "format": 1,
+   "cont": " 272053\n1451",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 770661,
+   "op": "-",
+   "b": 3,
+   "truth": 770658,
+   "format": 2,
+   "cont": "770658\n</think>\n\n770",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 921,
+   "op": "-",
+   "b": 153197,
+   "truth": -152276,
+   "format": 3,
+   "cont": " -152276\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 191490,
+   "op": "-",
+   "b": 268546,
+   "truth": -77056,
+   "format": 0,
+   "cont": "-77056.7\n191",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 138,
+   "op": "+",
+   "b": 759009,
+   "truth": 759147,
+   "format": 1,
+   "cont": " 759147\n138 +",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 213439,
+   "op": "+",
+   "b": 852017,
+   "truth": 1065456,
+   "format": 2,
+   "cont": "1065456\n</think>\n\n21",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 94258,
+   "op": "+",
+   "b": 859567,
+   "truth": 953825,
+   "format": 3,
+   "cont": " 953825\nA: 9",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 748491,
+   "op": "-",
+   "b": 5,
+   "truth": 748486,
+   "format": 0,
+   "cont": "748486\n74849",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 159,
+   "op": "+",
+   "b": 264374,
+   "truth": 264533,
+   "format": 1,
+   "cont": " 264533\n159 +",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 956871,
+   "op": "-",
+   "b": 7323,
+   "truth": 949548,
+   "format": 2,
+   "cont": "949548\n</think>\n\n956",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 8,
+   "op": "+",
+   "b": 386384,
+   "truth": 386392,
+   "format": 3,
+   "cont": " 386392\nA: 8",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 128146,
+   "op": "+",
+   "b": 4029,
+   "truth": 132175,
+   "format": 0,
+   "cont": "132175\n13217",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 3,
+   "op": "+",
+   "b": 770767,
+   "truth": 770770,
+   "format": 1,
+   "cont": " 770770\n7707",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 630041,
+   "op": "+",
+   "b": 244995,
+   "truth": 875036,
+   "format": 2,
+   "cont": "875036\n</think>\n\n630",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 48,
+   "op": "-",
+   "b": 240245,
+   "truth": -240197,
+   "format": 3,
+   "cont": " -240197\nA: 4",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 871118,
+   "op": "+",
+   "b": 99,
+   "truth": 871217,
+   "format": 0,
+   "cont": "871217\n87111",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 1644,
+   "op": "-",
+   "b": 719914,
+   "truth": -718270,
+   "format": 1,
+   "cont": " -718270\n1644",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 663208,
+   "op": "+",
+   "b": 48098,
+   "truth": 711306,
+   "format": 2,
+   "cont": "711306\n</think>\n\n663",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 75,
+   "op": "+",
+   "b": 584070,
+   "truth": 584145,
+   "format": 3,
+   "cont": " 584145\nA: 7",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 975055,
+   "op": "-",
+   "b": 97906,
+   "truth": 877149,
+   "format": 0,
+   "cont": "877149\n97505",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 718,
+   "op": "+",
+   "b": 183853,
+   "truth": 184571,
+   "format": 1,
+   "cont": " 184571\n718 *",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 838450,
+   "op": "+",
+   "b": 928,
+   "truth": 839378,
+   "format": 2,
+   "cont": "839378\n</think>\n\n838",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 8,
+   "op": "+",
+   "b": 950362,
+   "truth": 950370,
+   "format": 3,
+   "cont": " 950370\nA: 8",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 946053,
+   "op": "+",
+   "b": 192,
+   "truth": 946245,
+   "format": 0,
+   "cont": "946245\n94605",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 498567,
+   "op": "+",
+   "b": 775280,
+   "truth": 1273847,
+   "format": 1,
+   "cont": " 1273847\n498",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 966709,
+   "op": "-",
+   "b": 92641,
+   "truth": 874068,
+   "format": 2,
+   "cont": "874068\n</think>\n\n874",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 180103,
+   "op": "-",
+   "b": 129178,
+   "truth": 50925,
+   "format": 3,
+   "cont": " 50925\nA: 18",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 918154,
+   "op": "+",
+   "b": 60,
+   "truth": 918214,
+   "format": 0,
+   "cont": "918214\n91821",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 506,
+   "op": "-",
+   "b": 570544,
+   "truth": -570038,
+   "format": 1,
+   "cont": " -570038\n506 -",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 633241,
+   "op": "-",
+   "b": 5,
+   "truth": 633236,
+   "format": 2,
+   "cont": "633236\n</think>\n\n633",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 60818,
+   "op": "+",
+   "b": 333444,
+   "truth": 394262,
+   "format": 3,
+   "cont": " 394262\nA: 6",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 687415,
+   "op": "+",
+   "b": 4822,
+   "truth": 692237,
+   "format": 0,
+   "cont": "692237\n68741",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 33,
+   "op": "+",
+   "b": 322227,
+   "truth": 322260,
+   "format": 1,
+   "cont": " 322260\n3222",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 142997,
+   "op": "+",
+   "b": 20252,
+   "truth": 163249,
+   "format": 2,
+   "cont": "163249\n</think>\n\n142",
+   "ok": true
+  },
+  {
+   "digits": 6,
+   "a": 4,
+   "op": "+",
+   "b": 910496,
+   "truth": 910500,
+   "format": 3,
+   "cont": " 910500\nA: 4",
+   "ok": true
+  }
+ ]
+}

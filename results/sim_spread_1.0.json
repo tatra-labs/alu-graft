@@ -1,0 +1,23 @@
+{
+ "n": 5000,
+ "exact": 1.0,
+ "spread": 1.0,
+ "seconds": 289.14358615875244,
+ "by": {
+  "compact": 1.0,
+  "+": 1.0,
+  "digits3": 1.0,
+  "spaced": 1.0,
+  "digits5": 1.0,
+  "eq_spaced": 1.0,
+  "-": 1.0,
+  "op_spaced": 1.0,
+  "digits4": 1.0,
+  "after_colon": 1.0,
+  "digits6": 1.0,
+  "digits2": 1.0,
+  "digits1": 1.0
+ },
+ "failures": [],
+ "n_fail": 0
+}

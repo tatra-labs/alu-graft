@@ -1,0 +1,2718 @@
+{
+ "model": "base",
+ "n": 300,
+ "accuracy": 0.92,
+ "writes_supported_expression": 0.8,
+ "accuracy_when_supported": 0.9416666666666667,
+ "accuracy_when_not": 0.8333333333333334,
+ "by_digits": {
+  "1": 1.0,
+  "2": 1.0,
+  "3": 1.0,
+  "4": 0.9375,
+  "5": 0.9382716049382716,
+  "6": 0.8367346938775511
+ },
+ "rows": [
+  {
+   "q": "1 + 5",
+   "truth": 6,
+   "got": 6,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 1,
+   "reply": "1 + 5 = 6."
+  },
+  {
+   "q": "995310 - 423104",
+   "truth": 572206,
+   "got": 572106,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n995310 - 423104\n$$\n\n### Step 1: Subtract the numbers digit by digit.\n\nStart from the rightmost digit:\n\n- **0 - 0 = 0**\n- **1 - 4**: Can't do this, borrow from the next digit.\n- **1 becomes 10 after borrowing**, so **10 - 4 = 6**\n- **3 - 3 = 0**\n- **5 - 2 = 3**\n- **9 - 1 = 8**\n\nSo, the result is:\n\n$$\n995310 - 423104 = \\boxed{572106}\n$$"
+  },
+  {
+   "q": "89534 + 14",
+   "truth": 89548,
+   "got": 89548,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 89534 + 14 $, we add the two numbers:\n\n$$\n89534 + 14 = 89548\n$$\n\nSo, the final answer is **89548**."
+  },
+  {
+   "q": "7447 - 942708",
+   "truth": -935261,
+   "got": -935261,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**7447 - 942708**\n\nFirst, subtract the two numbers:\n\n$$\n7447 - 942708 = -935261\n$$\n\n### Final Answer:\n$$\n\\boxed{-935261}\n$$"
+  },
+  {
+   "q": "75806 + 5394",
+   "truth": 81200,
+   "got": 81200,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To add **75,806** and **5,394**, we can perform the addition step by step:\n\n$$\n75,806 + 5,394 = 81,200\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{81200}\n$$"
+  },
+  {
+   "q": "7 - 426",
+   "truth": -419,
+   "got": -419,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the expression $ 7 - 426 $:\n\n$$\n7 - 426 = -419\n$$\n\nSo, the result is **-419**."
+  },
+  {
+   "q": "3694 + 83467",
+   "truth": 87161,
+   "got": 87161,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To add **3694** and **83467**, we can perform the addition step by step:\n\n$$\n3694 + 83467 = 87161\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{87161}\n$$"
+  },
+  {
+   "q": "13 - 32",
+   "truth": -19,
+   "got": -19,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 2,
+   "reply": "13 minus 32 equals **-19**."
+  },
+  {
+   "q": "75 - 75",
+   "truth": 0,
+   "got": 0,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "75 - 75 = 0."
+  },
+  {
+   "q": "83385 - 290676",
+   "truth": -207291,
+   "got": -207291,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n83385 - 290676\n$$\n\nFirst, subtract the two numbers:\n\n$$\n83385 - 290676 = -207291\n$$\n\n### Final Answer:\n$$\n\\boxed{-207291}\n$$"
+  },
+  {
+   "q": "9607 - 899943",
+   "truth": -890336,
+   "got": -890336,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression:\n\n$$ 9607 - 899943 $$\n\nFirst, subtract 899,943 from 9,607.\n\n$$\n9607 - 899943 = -890,336\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-890336}\n$$"
+  },
+  {
+   "q": "57433 - 979",
+   "truth": 56454,
+   "got": 56454,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**57433 - 979**\n\nFirst, subtract 979 from 57433:\n\n$$\n57433 - 979 = 56454\n$$\n\n**Answer:** $ \\boxed{56454} $"
+  },
+  {
+   "q": "69 + 9689",
+   "truth": 9758,
+   "got": 9758,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 69 + 9689 $, we can add the numbers directly:\n\n$$\n69 + 9689 = 9758\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{9758}\n$$"
+  },
+  {
+   "q": "9160 - 612",
+   "truth": 8548,
+   "got": 8548,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**9160 - 612**\n\nFirst, subtract 612 from 9160:\n\n$$\n9160 - 612 = 8548\n$$\n\n**Answer:** 8548"
+  },
+  {
+   "q": "583406 - 6747",
+   "truth": 576659,
+   "got": 576659,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**583,406 - 6,747**\n\nFirst, subtract the numbers step by step:\n\n1. **583,406 - 6,000 = 577,406**\n2. **577,406 - 747 = 576,659**\n\nSo, the result is:\n\n**576,659**."
+  },
+  {
+   "q": "4634 + 440438",
+   "truth": 445072,
+   "got": 445072,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To add the numbers **4634** and **440438**, we can perform the addition step by step:\n\n$$\n4634 + 440438 = 445072\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{445072}\n$$"
+  },
+  {
+   "q": "72883 - 416",
+   "truth": 72467,
+   "got": 72467,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**72883 - 416**\n\nFirst, subtract 416 from 72883:\n\n$$\n72883 - 416 = 72467\n$$\n\n**Answer:** 72467"
+  },
+  {
+   "q": "689497 - 77862",
+   "truth": 611635,
+   "got": 611635,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n**689,497 - 77,862**\n\n### Step 1: Align the numbers by place value:\n\n```\n  689,497  \n-   77,862  \n----------\n```\n\n### Step 2: Subtract starting from the rightmost digit:\n\n- **7 - 2 = 5**\n- **9 - 6 = 3**\n- **4 - 8** \u2192 Can't do this, borrow from the next digit.\n  - So, 14 - 8 = 6\n  - The next digit becomes 3 (since we borrowed 1)\n- **9 - 7 = 2**\n- **6 - 7** \u2192 Can't do this, borrow from the next digit.\n  - So, 16 - 7 = 9\n  - The next digit becomes 0 (since we borrowed 1)\n- **8 - 0 = 8**\n\n### Final result:\n\n```\n  611,635\n```\n\n### \u2705 Answer: **611,635**"
+  },
+  {
+   "q": "312 - 612655",
+   "truth": -612343,
+   "got": -612343,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression $ 312 - 612655 $, we need to subtract the two numbers:\n\n$$\n312 - 612655 = -612343\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-612343}\n$$"
+  },
+  {
+   "q": "179036 + 54755",
+   "truth": 233791,
+   "got": 233791,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers **179,036** and **54,755**, we can perform the addition step by step:\n\n$$\n179,036 + 54,755 = 233,791\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{233791}\n$$"
+  },
+  {
+   "q": "23 + 161613",
+   "truth": 161636,
+   "got": 161636,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 23 + 161613 $, we can add the numbers directly:\n\n$$\n23 + 161613 = 161636\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{161636}\n$$"
+  },
+  {
+   "q": "332 + 99453",
+   "truth": 99785,
+   "got": 99785,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 332 + 99453 $, we can add the numbers directly:\n\n$$\n332 + 99453 = 99785\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{99785}\n$$"
+  },
+  {
+   "q": "44844 + 41",
+   "truth": 44885,
+   "got": 44885,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 44844 + 41 $, we add the two numbers:\n\n$$\n44844 + 41 = 44885\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{44885}\n$$"
+  },
+  {
+   "q": "0 - 1930",
+   "truth": -1930,
+   "got": -1930,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 4,
+   "reply": "0 minus 1930 is:\n\n**-1930**."
+  },
+  {
+   "q": "355 + 96",
+   "truth": 451,
+   "got": 451,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 355 + 96 $:\n\n$$\n355 + 96 = 451\n$$\n\nSo, the final answer is **451**."
+  },
+  {
+   "q": "1 + 0",
+   "truth": 1,
+   "got": 1,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 1,
+   "reply": "1 + 0 equals 1."
+  },
+  {
+   "q": "491220 + 4",
+   "truth": 491224,
+   "got": 491224,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 491220 + 4 $, we simply add the two numbers:\n\n$$\n491220 + 4 = 491224\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{491224}\n$$"
+  },
+  {
+   "q": "33 + 648501",
+   "truth": 648534,
+   "got": 648534,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 33 + 648501 $, we add the two numbers:\n\n$$\n33 + 648501 = 648534\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{648534}\n$$"
+  },
+  {
+   "q": "1707 + 42483",
+   "truth": 44190,
+   "got": 44190,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To find the sum of 1707 and 42483:\n\n$$\n1707 + 42483 = 44190\n$$\n\nSo, the final answer is **44,190**."
+  },
+  {
+   "q": "5 + 9",
+   "truth": 14,
+   "got": 14,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 1,
+   "reply": "5 + 9 = 14."
+  },
+  {
+   "q": "600 - 131",
+   "truth": 469,
+   "got": 469,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 600 - 131 $:\n\n1. Subtract 100 from 600: $ 600 - 100 = 500 $\n2. Subtract 30 from 500: $ 500 - 30 = 470 $\n3. Subtract 1 from 470: $ 470 - 1 = 469 $\n\nSo, $ 600 - 131 = \\boxed{469} $."
+  },
+  {
+   "q": "1749 - 44595",
+   "truth": -42846,
+   "got": -42846,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**1749 - 44595**\n\nFirst, subtract the two numbers:\n\n$$\n1749 - 44595 = -42846\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-42846}\n$$"
+  },
+  {
+   "q": "30113 + 595745",
+   "truth": 625858,
+   "got": 625858,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To add the numbers **30113** and **595745**, we can perform the addition step by step:\n\n$$\n30113 + 595745 = 625858\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{625858}\n$$"
+  },
+  {
+   "q": "5 + 979127",
+   "truth": 979132,
+   "got": 979132,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 5 + 979127 $, we add the two numbers:\n\n$$\n5 + 979127 = 979132\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{979132}\n$$"
+  },
+  {
+   "q": "2 - 9491",
+   "truth": -9489,
+   "got": -9489,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 2 - 9491 $, we perform the subtraction:\n\n$$\n2 - 9491 = -9489\n$$\n\nSo, the result is **-9489**."
+  },
+  {
+   "q": "6373 - 28852",
+   "truth": -22479,
+   "got": -22479,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**6373 - 28852**\n\nFirst, subtract the two numbers:\n\n$$\n6373 - 28852 = -22479\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-22479}\n$$"
+  },
+  {
+   "q": "720 + 529",
+   "truth": 1249,
+   "got": 1249,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 720 + 529 $:\n\n$$\n720 + 529 = 1249\n$$\n\nSo, the final answer is **1249**."
+  },
+  {
+   "q": "247397 + 97891",
+   "truth": 345288,
+   "got": 345288,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **247,397** and **97,891**, we can perform the addition step by step:\n\n$$\n\\begin{array}{r}\n 247,397 \\\\\n+ 97,891 \\\\\n\\hline\n 345,288 \\\\\n\\end{array}\n$$\n\n**Final Answer:**  \n$$\n247,397 + 97,891 = \\boxed{345,288}\n$$"
+  },
+  {
+   "q": "234 + 2",
+   "truth": 236,
+   "got": 236,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "234 + 2 = 236."
+  },
+  {
+   "q": "3 + 9327",
+   "truth": 9330,
+   "got": 9330,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 3 + 9327 $, we add the numbers:\n\n$$\n3 + 9327 = 9330\n$$\n\nSo, the final answer is **9330**."
+  },
+  {
+   "q": "66 - 19",
+   "truth": 47,
+   "got": 47,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "To calculate **66 minus 19**, we can do the following:\n\n$$\n66 - 19 = 47\n$$\n\nSo, the result is **47**."
+  },
+  {
+   "q": "3 - 91810",
+   "truth": -91807,
+   "got": -91807,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 3 - 91810 $, we perform the subtraction:\n\n$$\n3 - 91810 = -91807\n$$\n\nSo, the result is **-91807**."
+  },
+  {
+   "q": "533 + 392277",
+   "truth": 392810,
+   "got": 392810,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To find the sum of **533** and **392277**, we can add the two numbers directly:\n\n$$\n533 + 392277 = 392810\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{392810}\n$$"
+  },
+  {
+   "q": "59 + 6",
+   "truth": 65,
+   "got": 65,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "59 + 6 = 65."
+  },
+  {
+   "q": "1 + 41570",
+   "truth": 41571,
+   "got": 41571,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "1 + 41570 = 41571"
+  },
+  {
+   "q": "2 + 3",
+   "truth": 5,
+   "got": 5,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 1,
+   "reply": "2 + 3 = 5."
+  },
+  {
+   "q": "76 - 7",
+   "truth": 69,
+   "got": 69,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "76 minus 7 equals:\n\n**76 - 7 = 69**."
+  },
+  {
+   "q": "757 + 59807",
+   "truth": 60564,
+   "got": 60564,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To add **757 + 59807**, we can perform the addition step by step:\n\n$$\n757 + 59807 = 59807 + 757\n$$\n\nNow, add the numbers:\n\n$$\n59807 + 757 = 60564\n$$\n\n### Final Answer:\n$$\n\\boxed{60564}\n$$"
+  },
+  {
+   "q": "864339 - 65",
+   "truth": 864274,
+   "got": 864274,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression **864339 - 65**, we can subtract 65 from 864,339 directly:\n\n$$\n864339 - 65 = 864274\n$$\n\nSo, the final result is **864,274**."
+  },
+  {
+   "q": "86162 + 9",
+   "truth": 86171,
+   "got": 86171,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 86162 + 9 $, we simply add the two numbers:\n\n$$\n86162 + 9 = 86171\n$$\n\nSo, the final answer is **86171**."
+  },
+  {
+   "q": "3969 - 22292",
+   "truth": -18323,
+   "got": -18323,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**3969 - 22292**\n\nFirst, subtract the two numbers:\n\n$$\n3969 - 22292 = -18323\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-18323}\n$$"
+  },
+  {
+   "q": "631 - 1",
+   "truth": 630,
+   "got": 630,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 3,
+   "reply": "631 minus 1 equals **630**."
+  },
+  {
+   "q": "481 + 423249",
+   "truth": 423730,
+   "got": 423730,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 481 + 423249 $, we can add the two numbers directly:\n\n$$\n481 + 423249 = 423730\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{423730}\n$$"
+  },
+  {
+   "q": "206075 - 2720",
+   "truth": 203355,
+   "got": 193355,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**206075 - 2720**\n\nFirst, subtract 2720 from 206,075.\n\n**206,075 - 2,720**\n\nLet's do the subtraction step by step:\n\n- 206,075 - 2,000 = 194,075  \n- 194,075 - 700 = 193,375  \n- 193,375 - 20 = 193,355\n\n**Final Answer:** 193,355"
+  },
+  {
+   "q": "12 - 951507",
+   "truth": -951495,
+   "got": -951495,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression **12 - 951507**, we need to perform the subtraction:\n\n$$\n12 - 951507 = -951495\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-951495}\n$$"
+  },
+  {
+   "q": "7 + 8591",
+   "truth": 8598,
+   "got": 8600,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 7 + 8591 $:\n\n$$\n7 + 8591 = 8600\n$$\n\nSo, the final answer is **8600**."
+  },
+  {
+   "q": "19671 - 10698",
+   "truth": 8973,
+   "got": 8973,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**19671 - 10698**\n\nFirst, subtract the two numbers:\n\n$$\n19671 - 10698 = 8973\n$$\n\n**Answer:** $ \\boxed{8973} $"
+  },
+  {
+   "q": "4 + 840",
+   "truth": 844,
+   "got": 844,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "4 + 840 = 844."
+  },
+  {
+   "q": "34 - 2896",
+   "truth": -2862,
+   "got": -2862,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 34 - 2896 $:\n\n$$\n34 - 2896 = -2862\n$$\n\nSo, the result is **-2862**."
+  },
+  {
+   "q": "8589 - 246449",
+   "truth": -237860,
+   "got": -237860,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression **8589 - 246449**, we need to subtract the two numbers:\n\n$$\n8589 - 246449 = -237860\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-237860}\n$$"
+  },
+  {
+   "q": "5164 + 1",
+   "truth": 5165,
+   "got": 5165,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "5164 + 1 = **5165**."
+  },
+  {
+   "q": "5 - 94016",
+   "truth": -94011,
+   "got": -94011,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 5 - 94016 $, we perform the subtraction:\n\n$$\n5 - 94016 = -94011\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-94011}\n$$"
+  },
+  {
+   "q": "23 - 125867",
+   "truth": -125844,
+   "got": -125844,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the expression **23 - 125,867**, we perform the subtraction:\n\n$$\n23 - 125,867 = -125,844\n$$\n\nSo, the result is **-125,844**."
+  },
+  {
+   "q": "7 - 404876",
+   "truth": -404869,
+   "got": -404869,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 7 - 404876 $, we perform the subtraction:\n\n$$\n7 - 404876 = -404869\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-404869}\n$$"
+  },
+  {
+   "q": "7142 - 44",
+   "truth": 7098,
+   "got": 7098,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**7142 - 44**\n\nFirst, subtract 44 from 7142:\n\n$$\n7142 - 44 = 7142 - 40 - 4 = 7102 - 4 = 7098\n$$\n\nSo, the result is **7098**."
+  },
+  {
+   "q": "64914 - 9062",
+   "truth": 55852,
+   "got": 55852,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**64914 - 9062**\n\nFirst, subtract the two numbers:\n\n$$\n64914 - 9062 = 55852\n$$\n\n**Answer:** $ \\boxed{55852} $"
+  },
+  {
+   "q": "3562 - 72",
+   "truth": 3490,
+   "got": 3490,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 3562 - 72 $:\n\n1. Subtract 72 from 3562:\n   $$\n   3562 - 72 = 3490\n   $$\n\nSo, the result is **3490**."
+  },
+  {
+   "q": "99016 + 2381",
+   "truth": 101397,
+   "got": 101397,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**99016 + 2381**\n\nFirst, add the two numbers:\n\n$$\n99016 + 2381 = 101397\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{101397}\n$$"
+  },
+  {
+   "q": "2 + 658",
+   "truth": 660,
+   "got": 660,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "2 + 658 = 660."
+  },
+  {
+   "q": "2411 + 0",
+   "truth": 2411,
+   "got": 2411,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "2411 + 0 = 2411."
+  },
+  {
+   "q": "337 - 6397",
+   "truth": -6060,
+   "got": -6060,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 337 - 6397 $, we can perform the subtraction step by step:\n\n$$\n337 - 6397 = -6060\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-6060}\n$$"
+  },
+  {
+   "q": "46 + 24689",
+   "truth": 24735,
+   "got": 24735,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 46 + 24689 $, we can add the numbers directly:\n\n$$\n46 + 24689 = 24735\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{24735}\n$$"
+  },
+  {
+   "q": "22603 + 6387",
+   "truth": 28990,
+   "got": 29000,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To add **22,603** and **6,387**, we can perform the addition step by step:\n\n$$\n22,603 + 6,387 = 29,000\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{29000}\n$$"
+  },
+  {
+   "q": "369757 + 32225",
+   "truth": 401982,
+   "got": 402982,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **369,757** and **322,25**, we can perform the addition step by step:\n\n$$\n369,757 + 322,25 = 369,757 + 32,225 = 402, 982\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{402982}\n$$"
+  },
+  {
+   "q": "4841 - 523796",
+   "truth": -518955,
+   "got": -519955,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**4841 - 523796**\n\nFirst, subtract the two numbers:\n\n$$\n4841 - 523796 = -519, 955\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-519955}\n$$"
+  },
+  {
+   "q": "28974 - 589327",
+   "truth": -560353,
+   "got": -560353,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n28974 - 589327\n$$\n\nFirst, subtract the two numbers:\n\n$$\n28974 - 589327 = -560,353\n$$\n\n### Final Answer:\n$$\n\\boxed{-560353}\n$$"
+  },
+  {
+   "q": "949065 - 9",
+   "truth": 949056,
+   "got": 949056,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**949065 - 9**\n\nFirst, subtract 9 from 949,065:\n\n$$\n949065 - 9 = 949056\n$$\n\nSo, the result is:\n\n$$\n\\boxed{949056}\n$$"
+  },
+  {
+   "q": "511939 + 75",
+   "truth": 512014,
+   "got": 512014,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **511,939 + 75**, we can perform the addition step by step:\n\n$$\n511,939 + 75 = 511,939 + 70 + 5 = 511,939 + 70 = 512,009 + 5 = 512,014\n$$\n\nSo, the final result is:\n\n$$\n\\boxed{512014}\n$$"
+  },
+  {
+   "q": "7634 - 359",
+   "truth": 7275,
+   "got": 7275,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**7634 - 359**\n\nFirst, subtract 359 from 7634:\n\n$$\n7634 - 359 = 7275\n$$\n\n**Answer:** 7275"
+  },
+  {
+   "q": "595451 - 477599",
+   "truth": 117852,
+   "got": 117852,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n595451 - 477599\n$$\n\n### Step 1: Subtract the numbers digit by digit.\n\nStart from the rightmost digit:\n\n- **1 - 9**: Can't do this, borrow from the next digit.\n- **5 - 9**: Again, can't do this, borrow from the next digit.\n- **5 - 5**: Can do this.\n- **4 - 7**: Can't do this, borrow from the next digit.\n- **9 - 9**: Can do this.\n- **9 - 4**: Can do this.\n\nAfter borrowing, the result is:\n\n$$\n595451 - 477599 = 117852\n$$\n\n### \u2705 Final Answer:\n$$\n\\boxed{117852}\n$$"
+  },
+  {
+   "q": "790471 + 185368",
+   "truth": 975839,
+   "got": 975839,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To find the sum of 790,471 and 185,368:\n\n$$\n790,471 + 185,368 = 975,839\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{975839}\n$$"
+  },
+  {
+   "q": "34625 - 62785",
+   "truth": -28160,
+   "got": -28160,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**34625 - 62785**\n\nFirst, subtract the two numbers:\n\n$$\n34625 - 62785 = -28160\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-28160}\n$$"
+  },
+  {
+   "q": "428135 - 7",
+   "truth": 428128,
+   "got": 428128,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression $ 428135 - 7 $, we subtract 7 from 428,135:\n\n$$\n428135 - 7 = 428128\n$$\n\nSo, the result is **428,128**."
+  },
+  {
+   "q": "955711 + 22",
+   "truth": 955733,
+   "got": 955733,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To find the sum of 955711 and 22:\n\n$$\n955711 + 22 = 955733\n$$\n\nSo, the final answer is **955733**."
+  },
+  {
+   "q": "7320 + 37",
+   "truth": 7357,
+   "got": 7357,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**7320 + 37**\n\nWe can add the numbers directly:\n\n$$\n7320 + 37 = 7357\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{7357}\n$$"
+  },
+  {
+   "q": "4269 + 45967",
+   "truth": 50236,
+   "got": 50236,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To add **4269** and **45967**, we can perform the addition step by step:\n\n$$\n4269 + 45967 = 4269 + 45967\n$$\n\nLet's add them:\n\n$$\n4269 + 45967 = 50236\n$$\n\n### \u2705 Final Answer: **50236**"
+  },
+  {
+   "q": "3258 - 11112",
+   "truth": -7854,
+   "got": -7854,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the subtraction problem:\n\n**3258 - 11112**\n\nFirst, let's align the numbers:\n\n```\n  3258\n-11112\n-------\n```\n\nWe need to subtract starting from the rightmost digit. Since 8 is less than 2, we borrow from the next digit.\n\n```\n  3258\n-11112\n-------\n  3258 - 11112 = -7854\n```\n\n### Final Answer:\n**-7854**"
+  },
+  {
+   "q": "9412 + 679",
+   "truth": 10091,
+   "got": 10091,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 9412 + 679 $, we add the two numbers:\n\n$$\n9412 + 679 = 10091\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{10091}\n$$"
+  },
+  {
+   "q": "4358 + 897084",
+   "truth": 901442,
+   "got": 901442,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To find the sum of 4358 and 897084:\n\n$$\n4358 + 897084 = 897084 + 4358 = 901,442\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{901442}\n$$"
+  },
+  {
+   "q": "597 + 8",
+   "truth": 605,
+   "got": 605,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 597 + 8 $, we add the two numbers:\n\n$$\n597 + 8 = 605\n$$\n\nSo, the final answer is **605**."
+  },
+  {
+   "q": "98447 - 6486",
+   "truth": 91961,
+   "got": 91961,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**98447 - 6486**\n\nFirst, subtract 6486 from 98447:\n\n$$\n98447 - 6486 = 91961\n$$\n\n**Answer:** 91,961"
+  },
+  {
+   "q": "571 + 13608",
+   "truth": 14179,
+   "got": 14179,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 571 + 13608 $, we can add the numbers directly:\n\n$$\n571 + 13608 = 14179\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{14179}\n$$"
+  },
+  {
+   "q": "32767 - 877",
+   "truth": 31890,
+   "got": 31890,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To calculate $ 32767 - 877 $, follow these steps:\n\n1. Subtract 800 from 32767:  \n   $ 32767 - 800 = 31967 $\n\n2. Subtract 77 from 31967:  \n   $ 31967 - 77 = 31890 $\n\nSo, the result is:  \n**31890**."
+  },
+  {
+   "q": "740 + 925672",
+   "truth": 926412,
+   "got": 926412,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 740 + 925672 $, we can add the two numbers directly:\n\n$$\n740 + 925672 = 926,412\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{926412}\n$$"
+  },
+  {
+   "q": "7 - 58",
+   "truth": -51,
+   "got": -51,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "7 minus 58 equals:\n\n**7 - 58 = -51**."
+  },
+  {
+   "q": "263418 - 110",
+   "truth": 263308,
+   "got": 263407,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the expression **263418 - 110**, follow these steps:\n\n1. Subtract 10 from 263418:  \n   $ 263418 - 10 = 263408 $\n\n2. Then subtract 1 more:  \n   $ 263408 - 1 = 263407 $\n\n**Final Answer:**  \n**263407**"
+  },
+  {
+   "q": "10238 + 7004",
+   "truth": 17242,
+   "got": 17242,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**10238 + 7004**\n\nFirst, add the two numbers:\n\n$$\n10238 + 7004 = 17242\n$$\n\n**Answer:** $ \\boxed{17242} $"
+  },
+  {
+   "q": "83964 + 8254",
+   "truth": 92218,
+   "got": 92218,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**83964 + 8254**\n\nFirst, add the two numbers:\n\n$$\n83964 + 8254 = 92218\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{92218}\n$$"
+  },
+  {
+   "q": "622482 + 764",
+   "truth": 623246,
+   "got": 623246,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **622,482 + 764**, we can perform the addition step by step:\n\n$$\n622,482 + 764 = 623,246\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{623246}\n$$"
+  },
+  {
+   "q": "9823 - 845650",
+   "truth": -835827,
+   "got": -835827,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n9823 - 845650\n$$\n\nFirst, subtract:\n\n$$\n9823 - 845650 = -835827\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-835827}\n$$"
+  },
+  {
+   "q": "5 - 411",
+   "truth": -406,
+   "got": -406,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "5 minus 411 equals:\n\n**5 - 411 = -406**."
+  },
+  {
+   "q": "785149 - 758",
+   "truth": 784391,
+   "got": 784391,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**785149 - 758**\n\nFirst, subtract 758 from 785,149.\n\n$$\n785149 - 758 = 784,391\n$$\n\nSo, the result is **784,391**."
+  },
+  {
+   "q": "76644 - 3",
+   "truth": 76641,
+   "got": 76641,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the expression $ 76644 - 3 $, we subtract 3 from 76644:\n\n$$\n76644 - 3 = 76641\n$$\n\nSo, the result is **76641**."
+  },
+  {
+   "q": "29600 + 76148",
+   "truth": 105748,
+   "got": 105748,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To add **29,600** and **76,148**, we can perform the addition step by step:\n\n$$\n29,600 + 76,148 = 105,748\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{105748}\n$$"
+  },
+  {
+   "q": "338 + 7",
+   "truth": 345,
+   "got": 345,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "338 + 7 = 345."
+  },
+  {
+   "q": "18030 + 214",
+   "truth": 18244,
+   "got": 18244,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 18030 + 214 $, we can add the numbers directly:\n\n$$\n18030 + 214 = 18244\n$$\n\nSo, the final answer is **18,244**."
+  },
+  {
+   "q": "998207 + 6973",
+   "truth": 1005180,
+   "got": 1005180,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n998207 + 6973\n$$\n\nWe can add the numbers directly:\n\n$$\n998207 + 6973 = 1005180\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{1005180}\n$$"
+  },
+  {
+   "q": "179 - 442",
+   "truth": -263,
+   "got": -263,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the problem:\n\n**179 - 442**\n\nFirst, subtract 442 from 179:\n\n$$\n179 - 442 = -263\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-263}\n$$"
+  },
+  {
+   "q": "609 - 66",
+   "truth": 543,
+   "got": 543,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the expression **609 - 66**, follow these steps:\n\n1. **Subtract 66 from 609**:\n   $$\n   609 - 66 = 543\n   $$\n\n**Answer:** 543"
+  },
+  {
+   "q": "8241 + 91",
+   "truth": 8332,
+   "got": 8332,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 8241 + 91 $:\n\n$$\n8241 + 91 = 8332\n$$\n\nSo, the final answer is **8332**."
+  },
+  {
+   "q": "262 + 201",
+   "truth": 463,
+   "got": 463,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 262 + 201 $:\n\n$$\n262 + 201 = 463\n$$\n\nSo, the final answer is **463**."
+  },
+  {
+   "q": "7124 - 33",
+   "truth": 7091,
+   "got": 7091,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**7124 - 33**\n\nFirst, subtract 33 from 7124:\n\n$$\n7124 - 33 = 7091\n$$\n\nSo, the result is **7091**."
+  },
+  {
+   "q": "39 - 44",
+   "truth": -5,
+   "got": -5,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "39 - 44 = -5"
+  },
+  {
+   "q": "6607 - 394381",
+   "truth": -387774,
+   "got": -387774,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**6607 - 394381**\n\nFirst, subtract the two numbers:\n\n$$\n6607 - 394381 = -387774\n$$\n\n### Final Answer:\n$$\n\\boxed{-387774}\n$$"
+  },
+  {
+   "q": "887487 + 5777",
+   "truth": 893264,
+   "got": 893264,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers:\n\n$$\n887487 + 5777\n$$\n\nFirst, add the units place:\n\n$$\n7 + 7 = 14\n$$\n\nWrite down 4 and carry over 1.\n\nNext, add the tens place:\n\n$$\n8 + 7 + 1 = 16\n$$\n\nWrite down 6 and carry over 1.\n\nNext, add the hundreds place:\n\n$$\n4 + 7 + 1 = 12\n$$\n\nWrite down 2 and carry over 1.\n\nNext, add the thousands place:\n\n$$\n8 + 5 + 1 = 14\n$$\n\nWrite down 4 and carry over 1.\n\nFinally, add the millions place:\n\n$$\n8 + 0 + 1 = 9\n$$\n\nSo the final result is:\n\n$$\n\\boxed{893264}\n$$"
+  },
+  {
+   "q": "504 + 595",
+   "truth": 1099,
+   "got": 1099,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 504 + 595 $:\n\n$$\n504 + 595 = 1099\n$$\n\nSo, the final answer is **1099**."
+  },
+  {
+   "q": "551 + 588",
+   "truth": 1139,
+   "got": 1139,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 551 + 588 $:\n\n$$\n551 + 588 = 1139\n$$\n\nSo, the final answer is **1139**."
+  },
+  {
+   "q": "58 + 230",
+   "truth": 288,
+   "got": 288,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 58 + 230 $:\n\n$$\n58 + 230 = 288\n$$\n\nSo, the final answer is **288**."
+  },
+  {
+   "q": "2 + 467",
+   "truth": 469,
+   "got": 469,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "2 + 467 = 469."
+  },
+  {
+   "q": "557627 - 108793",
+   "truth": 448834,
+   "got": 448834,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression:\n\n$$ 557627 - 108793 $$\n\n### Step 1: Subtract the numbers\n\n$$\n557627 - 108793 = 448,834\n$$\n\n### \u2705 Final Answer: **448,834**"
+  },
+  {
+   "q": "59 - 80929",
+   "truth": -80870,
+   "got": -80870,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the expression **59 - 80929**, we perform the subtraction:\n\n$$\n59 - 80929 = -80870\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-80870}\n$$"
+  },
+  {
+   "q": "3467 - 477300",
+   "truth": -473833,
+   "got": -473833,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression:\n\n$$ 3467 - 477300 $$\n\nFirst, subtract 4,773,00 from 3,467:\n\n$$ 3467 - 477300 = -473833 $$\n\nSo, the result is:\n\n$$\n\\boxed{-473833}\n$$"
+  },
+  {
+   "q": "22 + 3329",
+   "truth": 3351,
+   "got": 3351,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 22 + 3329 $:\n\n$$\n22 + 3329 = 3351\n$$\n\nSo, the final answer is **3351**."
+  },
+  {
+   "q": "244 - 530",
+   "truth": -286,
+   "got": -286,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the problem:\n\n**244 - 530**\n\nFirst, subtract the two numbers:\n\n$$\n244 - 530 = -286\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-286}\n$$"
+  },
+  {
+   "q": "450 + 3",
+   "truth": 453,
+   "got": 453,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "450 + 3 = 453."
+  },
+  {
+   "q": "863401 + 88",
+   "truth": 863489,
+   "got": 863489,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **863,401 + 88**, we can simply perform the addition:\n\n$$\n863,401 + 88 = 863,489\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{863489}\n$$"
+  },
+  {
+   "q": "763 + 886",
+   "truth": 1649,
+   "got": 1649,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To find the sum of 763 and 886:\n\n$$\n763 + 886 = 1649\n$$\n\nSo, the answer is **1649**."
+  },
+  {
+   "q": "18 - 65",
+   "truth": -47,
+   "got": -47,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "18 - 65 = -47"
+  },
+  {
+   "q": "428 + 76",
+   "truth": 504,
+   "got": 504,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 428 + 76 $:\n\n- Add the units: $ 8 + 6 = 14 $\n- Add the tens: $ 2 + 7 = 9 $\n- Add the hundreds: $ 4 + 0 = 4 $\n\nSo, the result is $ 428 + 76 = 504 $."
+  },
+  {
+   "q": "886 - 845108",
+   "truth": -844222,
+   "got": -844222,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**886 - 845108**\n\nFirst, subtract:\n\n$$\n886 - 845108 = -844222\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-844222}\n$$"
+  },
+  {
+   "q": "60 - 7",
+   "truth": 53,
+   "got": 53,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "60 - 7 = 53."
+  },
+  {
+   "q": "81385 + 957",
+   "truth": 82342,
+   "got": 82342,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**81385 + 957**\n\nFirst, add the numbers:\n\n$$\n81385 + 957 = 82342\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{82342}\n$$"
+  },
+  {
+   "q": "80593 - 97120",
+   "truth": -16527,
+   "got": -16527,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**80593 - 97120**\n\nFirst, subtract the two numbers:\n\n$$\n80593 - 97120 = -16527\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-16527}\n$$"
+  },
+  {
+   "q": "8447 - 277631",
+   "truth": -269184,
+   "got": -269184,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n8447 - 277631\n$$\n\nFirst, subtract the two numbers:\n\n$$\n8447 - 277631 = -269,184\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-269184}\n$$"
+  },
+  {
+   "q": "8416 + 16049",
+   "truth": 24465,
+   "got": 24465,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To find the sum of 8416 and 16049:\n\n$$\n8416 + 16049 = 24465\n$$\n\nSo, the final answer is **24,465**."
+  },
+  {
+   "q": "3100 + 25525",
+   "truth": 28625,
+   "got": 28625,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To add **3100** and **25525**, we can perform the addition step by step:\n\n$$\n3100 + 25525 = 28625\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{28625}\n$$"
+  },
+  {
+   "q": "4 + 8498",
+   "truth": 8502,
+   "got": 8502,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 4 + 8498 $:\n\n$$\n4 + 8498 = 8502\n$$\n\nSo, the final answer is **8502**."
+  },
+  {
+   "q": "784 + 5",
+   "truth": 789,
+   "got": 789,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 784 + 5 $, we add the two numbers:\n\n$$\n784 + 5 = 789\n$$\n\nSo, the final answer is **789**."
+  },
+  {
+   "q": "28 + 6",
+   "truth": 34,
+   "got": 34,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "28 + 6 = 34."
+  },
+  {
+   "q": "576 - 152184",
+   "truth": -151608,
+   "got": -149608,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression **576 - 152184**, we can perform the subtraction step by step:\n\n1. **Subtract 152184 from 576**:\n\n$$\n576 - 152184 = -149608\n$$\n\n### Final Answer:\n$$\n\\boxed{-149608}\n$$"
+  },
+  {
+   "q": "71 + 2",
+   "truth": 73,
+   "got": 73,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "71 + 2 = 73."
+  },
+  {
+   "q": "74 + 668490",
+   "truth": 668564,
+   "got": 669164,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 74 + 668490 $, we can add the numbers directly:\n\n$$\n74 + 668490 = 669,164\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{669164}\n$$"
+  },
+  {
+   "q": "8 - 10",
+   "truth": -2,
+   "got": -2,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 2,
+   "reply": "8 - 10 equals **-2**."
+  },
+  {
+   "q": "350069 - 28345",
+   "truth": 321724,
+   "got": 32174,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n350069 - 28345\n$$\n\n### Step 1: Subtract the numbers digit by digit.\n\nStart from the rightmost digit:\n\n- 9 - 5 = 4  \n- 6 - 4 = 2  \n- 0 - 3 \u2192 Can't do this. So we borrow.  \n  - 10 - 3 = 7, and the next digit becomes 9 (since we borrowed 1 from the tens place).  \n- 0 becomes 10, and the next digit becomes 9.  \n- 5 becomes 15, and the next digit becomes 0.  \n- 3 becomes 13, and the next digit becomes 0.  \n- 2 becomes 12, and the next digit becomes 0.\n\nSo the result is:\n\n$$\n32174\n$$\n\n### \u2705 Final Answer: **32174**"
+  },
+  {
+   "q": "3158 + 8",
+   "truth": 3166,
+   "got": 3166,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 3158 + 8 $, we add the two numbers:\n\n$$\n3158 + 8 = 3166\n$$\n\nSo, the final answer is **3166**."
+  },
+  {
+   "q": "69 + 3",
+   "truth": 72,
+   "got": 72,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "69 + 3 = 72."
+  },
+  {
+   "q": "92100 - 58",
+   "truth": 92042,
+   "got": 92042,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**92100 - 58**\n\nFirst, subtract 58 from 92100:\n\n$$\n92100 - 58 = 92042\n$$\n\nSo, the result is **92042**."
+  },
+  {
+   "q": "61621 + 852442",
+   "truth": 914063,
+   "got": 914063,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To add the numbers **61621** and **852442**, we can simply perform the addition:\n\n$$\n61621 + 852442 = 914063\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{914063}\n$$"
+  },
+  {
+   "q": "29842 + 3",
+   "truth": 29845,
+   "got": 29845,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 29842 + 3 $, we simply add the two numbers:\n\n$$\n29842 + 3 = 29845\n$$\n\nSo, the final answer is **29845**."
+  },
+  {
+   "q": "5872 - 53",
+   "truth": 5819,
+   "got": 5819,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 4,
+   "reply": "To calculate $ 5872 - 53 $:\n\n1. Subtract 50 from 5872:  \n   $ 5872 - 50 = 5822 $\n\n2. Subtract 3:  \n   $ 5822 - 3 = 5819 $\n\nSo, the result is **5819**."
+  },
+  {
+   "q": "26 - 7523",
+   "truth": -7497,
+   "got": -7497,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the expression **26 - 7523**, we need to perform the subtraction:\n\n$$\n26 - 7523 = -7523 + 26 = -7497\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-7497}\n$$"
+  },
+  {
+   "q": "675 - 1",
+   "truth": 674,
+   "got": 674,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 3,
+   "reply": "675 minus 1 equals **674**."
+  },
+  {
+   "q": "640 - 883",
+   "truth": -243,
+   "got": -243,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 640 - 883 $:\n\n1. Subtract the two numbers:\n   $$\n   640 - 883 = -243\n   $$\n\nSo, the result is **-243**."
+  },
+  {
+   "q": "530 + 99",
+   "truth": 629,
+   "got": 629,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 530 + 99 $:\n\n$$\n530 + 99 = 629\n$$\n\nSo, the final answer is **629**."
+  },
+  {
+   "q": "790203 + 23629",
+   "truth": 813832,
+   "got": 813832,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To add the numbers:\n\n$$\n790203 + 23629\n$$\n\nFirst, add the numbers digit by digit:\n\n- Units place: $3 + 9 = 12$ \u2192 Write down 2, carry over 1\n- Tens place: $0 + 2 + 1 = 3$\n- Hundreds place: $2 + 6 = 8$\n- Thousands place: $9 + 3 = 12$ \u2192 Write down 2, carry over 1\n- Ten-thousands place: $0 + 2 + 1 = 3$\n- Hundred-thousands place: $7 + 0 = 7$\n\nNow combine the results:\n\n$$\n790203 + 23629 = \\boxed{813832}\n$$"
+  },
+  {
+   "q": "36478 + 37831",
+   "truth": 74309,
+   "got": 74309,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To find the sum of 36,478 and 37,831:\n\n$$\n36,478 + 37,831 = 74,309\n$$\n\nSo, the final answer is **74,309**."
+  },
+  {
+   "q": "1640 + 94553",
+   "truth": 96193,
+   "got": 96193,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To add **1640** and **94553**, we can perform the addition step by step:\n\n$$\n1640 + 94553 = 96193\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{96193}\n$$"
+  },
+  {
+   "q": "878251 - 4",
+   "truth": 878247,
+   "got": 878247,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression $ 878251 - 4 $, we subtract 4 from 878,251:\n\n$$\n878251 - 4 = 878247\n$$\n\nSo, the result is **878,247**."
+  },
+  {
+   "q": "39429 - 2",
+   "truth": 39427,
+   "got": 39427,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the expression $ 39429 - 2 $, we subtract 2 from 39429:\n\n$$\n39429 - 2 = 39427\n$$\n\nSo, the result is **39427**."
+  },
+  {
+   "q": "3 + 213606",
+   "truth": 213609,
+   "got": 213609,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 3 + 213606 $, we simply add the two numbers:\n\n$$\n3 + 213606 = 213609\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{213609}\n$$"
+  },
+  {
+   "q": "670720 + 295534",
+   "truth": 966254,
+   "got": 966254,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers **670,720** and **295,534**, we can perform the addition step by step:\n\n$$\n670,720 + 295,534 = 966,254\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{966254}\n$$"
+  },
+  {
+   "q": "760160 + 5780",
+   "truth": 765940,
+   "got": 765940,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**760160 + 5780**\n\nFirst, add the two numbers:\n\n$$\n760160 + 5780 = 765940\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{765940}\n$$"
+  },
+  {
+   "q": "99 - 939",
+   "truth": -840,
+   "got": -840,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the expression $ 99 - 939 $:\n\n1. Subtract 939 from 99:\n   $$\n   99 - 939 = -840\n   $$\n\nSo, the result is **-840**."
+  },
+  {
+   "q": "18851 - 64091",
+   "truth": -45240,
+   "got": -45240,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**18851 - 64091**\n\nFirst, subtract the two numbers:\n\n$$\n18851 - 64091 = -45240\n$$\n\n### Final Answer:\n$$\n\\boxed{-45240}\n$$"
+  },
+  {
+   "q": "135337 - 577479",
+   "truth": -442142,
+   "got": -442142,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n135,337 - 577,479\n$$\n\nFirst, subtract the numbers step by step:\n\n$$\n135,337 - 577,479\n$$\n\nSince 135,337 is smaller than 577,479, the result will be negative:\n\n$$\n135,337 - 577,479 = -442,142\n$$\n\n### Final Answer:\n$$\n\\boxed{-442142}\n$$"
+  },
+  {
+   "q": "767371 + 4",
+   "truth": 767375,
+   "got": 767375,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add 767,371 and 4:\n\n$$\n767,371 + 4 = 767,375\n$$\n\nSo, the result is **767,375**."
+  },
+  {
+   "q": "52 - 5284",
+   "truth": -5232,
+   "got": -5232,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the expression **52 - 5284**, we need to perform the subtraction:\n\n$$\n52 - 5284 = -5232\n$$\n\nSo, the result is **-5232**."
+  },
+  {
+   "q": "36366 + 66324",
+   "truth": 102690,
+   "got": 102690,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To find the sum of 36366 and 66324:\n\n$$\n36366 + 66324 = 102690\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{102690}\n$$"
+  },
+  {
+   "q": "924428 - 67",
+   "truth": 924361,
+   "got": 924361,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**924,428 - 67**\n\nFirst, subtract 67 from 924,428:\n\n$$\n924,428 - 67 = 924,361\n$$\n\nSo, the result is **924,361**."
+  },
+  {
+   "q": "584 + 5171",
+   "truth": 5755,
+   "got": 5755,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 584 + 5171 $, we can add the numbers directly:\n\n$$\n584 + 5171 = 5755\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{5755}\n$$"
+  },
+  {
+   "q": "68319 - 4147",
+   "truth": 64172,
+   "got": 64172,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**68319 - 4147**\n\nFirst, subtract 4147 from 68319:\n\n$$\n68319 - 4147 = 64172\n$$\n\n**Answer:** 64172"
+  },
+  {
+   "q": "50561 + 172",
+   "truth": 50733,
+   "got": 50733,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**50561 + 172**\n\nFirst, add the numbers:\n\n$$\n50561 + 172 = 50733\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{50733}\n$$"
+  },
+  {
+   "q": "741 + 71779",
+   "truth": 72520,
+   "got": 72520,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 741 + 71779 $, we can add the two numbers directly:\n\n$$\n741 + 71779 = 72520\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{72520}\n$$"
+  },
+  {
+   "q": "96335 + 704918",
+   "truth": 801253,
+   "got": 791523,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers **963,35 + 704,918**, we can perform the addition step by step:\n\n1. **Align the numbers by place value:**\n\n   ```\n     963,35\n   + 704,918\n   ---------\n   ```\n\n2. **Add the units place:**\n   $ 5 + 8 = 13 $ \u2192 Write down **3**, carry over **1**.\n\n3. **Add the tens place:**\n   $ 3 + 1 + 1 = 5 $ \u2192 Write down **5**.\n\n4. **Add the hundreds place:**\n   $ 3 + 9 = 12 $ \u2192 Write down **2**, carry over **1**.\n\n5. **Add the thousands place:**\n   $ 6 + 4 + 1 = 11 $ \u2192 Write down **1**, carry over **1**.\n\n6. **Add the ten-thousands place:**\n   $ 9 + 0 + 1 = 10 $ \u2192 Write down **0**, carry over **1**.\n\n7. **Add the millions place:**\n   $ 0 + 7 = 7 $.\n\nNow, combine all the digits from the final result:\n\n- **Millions place:** 7  \n- **Ten-thousands place:** 0  \n- **Thousands place:** 1  \n- **Hundreds place:** 2  \n- **Tens place:** 5  \n- **Units place:** 3\n\nSo, the final sum is:\n\n$$\n\\boxed{791,523}\n$$"
+  },
+  {
+   "q": "317376 - 648",
+   "truth": 316728,
+   "got": 316728,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**317376 - 648**\n\nFirst, subtract 648 from 317,376:\n\n$$\n317,376 - 648 = 316,728\n$$\n\n**Answer:** 316,728"
+  },
+  {
+   "q": "0 - 3",
+   "truth": -3,
+   "got": -3,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 1,
+   "reply": "0 minus 3 is **-3**."
+  },
+  {
+   "q": "8 - 362",
+   "truth": -354,
+   "got": -354,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the expression $ 8 - 362 $, we perform the subtraction:\n\n$$\n8 - 362 = -354\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{-354}\n$$"
+  },
+  {
+   "q": "7870 + 7",
+   "truth": 7877,
+   "got": 7877,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 7870 + 7 $, we add the numbers:\n\n$$\n7870 + 7 = 7877\n$$\n\nSo, the final answer is **7877**."
+  },
+  {
+   "q": "688 + 27282",
+   "truth": 27970,
+   "got": 27970,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 688 + 27282 $, we can add the numbers directly:\n\n$$\n688 + 27282 = 27970\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{27970}\n$$"
+  },
+  {
+   "q": "87 + 58",
+   "truth": 145,
+   "got": 145,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "To calculate $ 87 + 58 $:\n\n$$\n87 + 58 = 145\n$$\n\nSo, the answer is **145**."
+  },
+  {
+   "q": "568930 + 46592",
+   "truth": 615522,
+   "got": 615522,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers:\n\n**568,930 + 465,92**\n\nFirst, add the numbers:\n\n$$\n568,930 + 465,92 = 615,522\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{615522}\n$$"
+  },
+  {
+   "q": "4892 - 3478",
+   "truth": 1414,
+   "got": 1414,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**4892 - 3478**\n\nFirst, subtract the two numbers:\n\n$$\n4892 - 3478 = 1414\n$$\n\n**Answer:** 1414"
+  },
+  {
+   "q": "89 - 52",
+   "truth": 37,
+   "got": 37,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "To calculate $ 89 - 52 $:\n\n1. Subtract the two numbers:  \n   $ 89 - 52 = 37 $.\n\nSo, the result is **37**."
+  },
+  {
+   "q": "40760 + 4490",
+   "truth": 45250,
+   "got": 45250,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**40760 + 4490**\n\nFirst, add the two numbers:\n\n$$\n40760 + 4490 = 45250\n$$\n\n**Answer:** 45,250"
+  },
+  {
+   "q": "355 - 245076",
+   "truth": -244721,
+   "got": -244721,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 355 - 245076 $, we subtract:\n\n$$\n355 - 245076 = -244721\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-244721}\n$$"
+  },
+  {
+   "q": "8467 - 6",
+   "truth": 8461,
+   "got": 8461,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the expression $ 8467 - 6 $, we subtract 6 from 8467:\n\n$$\n8467 - 6 = 8461\n$$\n\nSo, the result is **8461**."
+  },
+  {
+   "q": "5666 + 4524",
+   "truth": 10190,
+   "got": 10190,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To find the sum of 5666 and 4524:\n\n$$\n5666 + 4524 = 10190\n$$\n\nSo, the final answer is **10190**."
+  },
+  {
+   "q": "78 + 8",
+   "truth": 86,
+   "got": 86,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "78 + 8 = 86."
+  },
+  {
+   "q": "98410 + 10469",
+   "truth": 108879,
+   "got": 108879,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**98410 + 10469**\n\nFirst, add the two numbers:\n\n$$\n98410 + 10469 = 108879\n$$\n\n**Answer:** $ \\boxed{108879} $"
+  },
+  {
+   "q": "8055 + 521032",
+   "truth": 529087,
+   "got": 529087,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers:\n\n$$\n8055 + 521032\n$$\n\nFirst, add the units place:\n\n$$\n5 + 2 = 7\n$$\n\nThen the tens place:\n\n$$\n5 + 3 = 8\n$$\n\nNext, hundreds place:\n\n$$\n0 + 1 = 1\n$$\n\nThousands place:\n\n$$\n5 + 0 = 5\n$$\n\nNow, the next digit (ten-thousands place):\n\n$$\n0 + 2 = 2\n$$\n\nSo, the result is:\n\n$$\n521032 + 8055 = \\boxed{529087}\n$$"
+  },
+  {
+   "q": "23235 - 473",
+   "truth": 22762,
+   "got": 22762,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**23235 - 473**\n\nFirst, subtract 473 from 23235:\n\n$$\n23235 - 473 = 22762\n$$\n\n**Answer:** 22762"
+  },
+  {
+   "q": "86137 - 2151",
+   "truth": 83986,
+   "got": 84086,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**86137 - 2151**\n\nFirst, subtract 2151 from 86137:\n\n$$\n86137 - 2151 = 84, 086\n$$\n\nSo, the result is **84,086**."
+  },
+  {
+   "q": "331878 + 393245",
+   "truth": 725123,
+   "got": 725123,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To find the sum of 331,878 and 393,245:\n\n$$\n331,878 + 393,245 = 725,123\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{725123}\n$$"
+  },
+  {
+   "q": "0 + 3118",
+   "truth": 3118,
+   "got": 3118,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "0 + 3118 = 3118."
+  },
+  {
+   "q": "40 + 650",
+   "truth": 690,
+   "got": 690,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "40 + 650 = 690."
+  },
+  {
+   "q": "94720 + 47",
+   "truth": 94767,
+   "got": 94767,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**94,720 + 47**\n\nWe can add the numbers directly:\n\n$$\n94,720 + 47 = 94,767\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{94767}\n$$"
+  },
+  {
+   "q": "667147 + 21350",
+   "truth": 688497,
+   "got": 688497,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add the numbers **667,147** and **213,50**, follow these steps:\n\n1. Add the units place:  \n   $ 7 + 0 = 7 $\n\n2. Add the tens place:  \n   $ 4 + 5 = 9 $\n\n3. Add the hundreds place:  \n   $ 1 + 3 = 4 $\n\n4. Add the thousands place:  \n   $ 6 + 1 = 7 $\n\n5. Add the ten-thousands place:  \n   $ 6 + 2 = 8 $\n\n6. Add the hundred-thousands place:  \n   $ 6 + 1 = 7 $\n\nNow, combine all the results:\n\n$$\n\\boxed{688,497}\n$$"
+  },
+  {
+   "q": "3296 - 135537",
+   "truth": -132241,
+   "got": -132241,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**3296 - 135537**\n\nFirst, subtract the two numbers:\n\n$$\n3296 - 135537 = -132241\n$$\n\n### Final Answer:\n$$\n\\boxed{-132241}\n$$"
+  },
+  {
+   "q": "45167 + 596206",
+   "truth": 641373,
+   "got": 641373,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To add the numbers **45167** and **596206**, we can perform the addition step by step:\n\n$$\n45167 + 596206 = 641373\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{641373}\n$$"
+  },
+  {
+   "q": "54573 + 802",
+   "truth": 55375,
+   "got": 55375,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**54573 + 802**\n\nFirst, add the numbers:\n\n$$\n54573 + 802 = 55375\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{55375}\n$$"
+  },
+  {
+   "q": "24030 - 723",
+   "truth": 23307,
+   "got": 23307,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**24030 - 723**\n\nFirst, subtract 723 from 24030:\n\n$$\n24030 - 723 = 23307\n$$\n\n**Answer:** 23307"
+  },
+  {
+   "q": "382 - 944001",
+   "truth": -943619,
+   "got": -943619,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression $ 382 - 944001 $, we can perform the subtraction step by step:\n\n$$\n382 - 944001 = -943619\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-943619}\n$$"
+  },
+  {
+   "q": "714 + 29635",
+   "truth": 30349,
+   "got": 30349,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To add **714** and **29635**, we can perform the addition step by step:\n\n$$\n714 + 29635 = 29635 + 714\n$$\n\nNow, add the numbers:\n\n$$\n29635 + 714 = 29635 + 700 + 14 = 29635 + 700 = 30335, \\quad 30335 + 14 = 30349\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{30349}\n$$"
+  },
+  {
+   "q": "6 + 957",
+   "truth": 963,
+   "got": 963,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 6 + 957 $, we add the numbers:\n\n$$\n6 + 957 = 963\n$$\n\nSo, the final answer is **963**."
+  },
+  {
+   "q": "647 + 850084",
+   "truth": 850731,
+   "got": 850731,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 647 + 850084 $, we can add the two numbers directly:\n\n$$\n647 + 850084 = 850731\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{850731}\n$$"
+  },
+  {
+   "q": "823936 - 8",
+   "truth": 823928,
+   "got": 823928,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 823936 - 8 $, we subtract 8 from 823,936:\n\n$$\n823936 - 8 = 823928\n$$\n\nSo, the result is **823,928**."
+  },
+  {
+   "q": "4930 + 3979",
+   "truth": 8909,
+   "got": 8909,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To find the sum of 4930 and 3979:\n\n$$\n4930 + 3979 = 8909\n$$\n\nSo, the final answer is **8909**."
+  },
+  {
+   "q": "12083 - 9",
+   "truth": 12074,
+   "got": 12074,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 12083 - 9 $:\n\n$$\n12083 - 9 = 12074\n$$\n\nSo, the result is **12074**."
+  },
+  {
+   "q": "409080 + 12",
+   "truth": 409092,
+   "got": 409092,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression $ 409080 + 12 $, we simply add the two numbers:\n\n$$\n409080 + 12 = 409092\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{409092}\n$$"
+  },
+  {
+   "q": "38 + 62801",
+   "truth": 62839,
+   "got": 63839,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 38 + 62801 $:\n\n$$\n38 + 62801 = 63, 839\n$$\n\nSo, the result is **63,839**."
+  },
+  {
+   "q": "711 + 1",
+   "truth": 712,
+   "got": 712,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "711 + 1 = 712."
+  },
+  {
+   "q": "34 + 23493",
+   "truth": 23527,
+   "got": 23527,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 34 + 23493 $, we can add the numbers directly:\n\n$$\n34 + 23493 = 23527\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{23527}\n$$"
+  },
+  {
+   "q": "183879 - 9195",
+   "truth": 174684,
+   "got": -1895,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n**183,879 - 9,195**\n\n### Step 1: Subtract the units place\n9,195  \n- 795  \n= **8,195**\n\n### Step 2: Subtract the tens place\n8,195  \n- 90  \n= **8,005**\n\n### Step 3: Subtract the hundreds place\n8,005  \n- 100  \n= **7,905**\n\n### Step 4: Subtract the thousands place\n7,905  \n- 800  \n= **7,105**\n\n### Step 5: Subtract the ten-thousands place\n7,105  \n- 9,000  \n= **-1,895**\n\n### Final Answer:\n**-1,895**"
+  },
+  {
+   "q": "38999 - 154975",
+   "truth": -115976,
+   "got": -115976,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n38999 - 154975\n$$\n\nFirst, subtract the two numbers:\n\n$$\n38999 - 154975 = -115,976\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-115976}\n$$"
+  },
+  {
+   "q": "3536 + 64",
+   "truth": 3600,
+   "got": 3600,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 3536 + 64 $:\n\n$$\n3536 + 64 = 3600\n$$\n\nSo, the final answer is **3600**."
+  },
+  {
+   "q": "7108 + 155360",
+   "truth": 162468,
+   "got": 162468,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To add the numbers **7108** and **155360**, we can simply perform the addition:\n\n$$\n7108 + 155360 = 162468\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{162468}\n$$"
+  },
+  {
+   "q": "67339 + 8306",
+   "truth": 75645,
+   "got": 75645,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To add **67,339** and **8,306**, we can perform the addition step by step:\n\n$$\n67,339 + 8,306 = 75,645\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{75645}\n$$"
+  },
+  {
+   "q": "3094 + 56000",
+   "truth": 59094,
+   "got": 59094,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 3094 + 56000 $:\n\n$$\n3094 + 56000 = 59094\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{59094}\n$$"
+  },
+  {
+   "q": "2 - 254",
+   "truth": -252,
+   "got": -252,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "2 minus 254 equals:\n\n**2 - 254 = -252**."
+  },
+  {
+   "q": "42821 - 563870",
+   "truth": -521049,
+   "got": -521049,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression:\n\n$$ 42821 - 563870 $$\n\nFirst, subtract the two numbers:\n\n$$\n42821 - 563870 = -521049\n$$\n\n### Final Answer:\n$$\n\\boxed{-521049}\n$$"
+  },
+  {
+   "q": "7930 - 65",
+   "truth": 7865,
+   "got": 7924,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 4,
+   "reply": "To calculate $ 7930 - 65 $:\n\n1. Subtract 5 from 7930:  \n   $ 7930 - 5 = 7925 $\n\n2. Then subtract 1 more:  \n   $ 7925 - 1 = 7924 $\n\nSo, the result is:  \n**7924**."
+  },
+  {
+   "q": "90 - 132",
+   "truth": -42,
+   "got": -42,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the problem:\n\n**90 - 132**\n\nFirst, subtract 132 from 90:\n\n$$\n90 - 132 = -42\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-42}\n$$"
+  },
+  {
+   "q": "65905 + 4",
+   "truth": 65909,
+   "got": 65909,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 65905 + 4 $, we simply add the numbers:\n\n$$\n65905 + 4 = 65909\n$$\n\nSo, the final answer is **65909**."
+  },
+  {
+   "q": "84569 - 5287",
+   "truth": 79282,
+   "got": 79282,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**84,569 - 5,287**\n\nFirst, subtract the two numbers:\n\n$$\n84,569 - 5,287 = 79,282\n$$\n\n**Answer:** $ \\boxed{79282} $"
+  },
+  {
+   "q": "68 - 6980",
+   "truth": -6912,
+   "got": -6912,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 68 - 6980 $:\n\n$$\n68 - 6980 = -6912\n$$\n\nSo, the result is **-6912**."
+  },
+  {
+   "q": "683107 + 78",
+   "truth": 683185,
+   "got": 683185,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **683,107 + 78**, we can perform the addition step by step:\n\n$$\n683,107 + 78 = 683,185\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{683185}\n$$"
+  },
+  {
+   "q": "6925 + 529",
+   "truth": 7454,
+   "got": 7454,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 6925 + 529 $, we can add the numbers step by step:\n\n$$\n6925 + 529 = 7454\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{7454}\n$$"
+  },
+  {
+   "q": "42202 - 883305",
+   "truth": -841103,
+   "got": -841003,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression:\n\n$$ 42202 - 883305 $$\n\nFirst, subtract the two numbers:\n\n$$\n42202 - 883305 = -841003\n$$\n\n### Final Answer:\n$$\n\\boxed{-841003}\n$$"
+  },
+  {
+   "q": "9 - 8560",
+   "truth": -8551,
+   "got": -8461,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 9 - 8560 $:\n\n$$\n9 - 8560 = -8461\n$$\n\nSo, the result is **-8461**."
+  },
+  {
+   "q": "6 - 574529",
+   "truth": -574523,
+   "got": -574523,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 6 - 574529 $, we perform the subtraction:\n\n$$\n6 - 574529 = -574523\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-574523}\n$$"
+  },
+  {
+   "q": "31701 + 250",
+   "truth": 31951,
+   "got": 31951,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 31701 + 250 $:\n\n$$\n31701 + 250 = 31951\n$$\n\nSo, the final answer is **31951**."
+  },
+  {
+   "q": "282344 - 528345",
+   "truth": -246001,
+   "got": -246001,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n282344 - 528345\n$$\n\nFirst, subtract the numbers step by step:\n\n$$\n282344 - 528345 = -246001\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-246001}\n$$"
+  },
+  {
+   "q": "3828 - 526770",
+   "truth": -522942,
+   "got": -523942,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**3828 - 526770**\n\nFirst, subtract:\n\n$$\n3828 - 526770 = -523,942\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-523942}\n$$"
+  },
+  {
+   "q": "514 - 49215",
+   "truth": -48701,
+   "got": -48701,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the expression **514 - 49215**, we need to perform the subtraction:\n\n$$\n514 - 49215 = -48701\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-48701}\n$$"
+  },
+  {
+   "q": "799831 - 111",
+   "truth": 799720,
+   "got": 799720,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n**799831 - 111**\n\nFirst, subtract 111 from 799,831.\n\n**799,831 - 111 = 799,720**\n\nSo, the result is **799,720**."
+  },
+  {
+   "q": "37008 + 7",
+   "truth": 37015,
+   "got": 37015,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 37008 + 7 $, we add the two numbers:\n\n$$\n37008 + 7 = 37015\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{37015}\n$$"
+  },
+  {
+   "q": "5 - 5",
+   "truth": 0,
+   "got": 0,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 1,
+   "reply": "5 - 5 equals 0."
+  },
+  {
+   "q": "287308 + 6335",
+   "truth": 293643,
+   "got": 293643,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **287,308** and **63,35**, we can perform the addition step by step:\n\n$$\n287,308 + 63,35 = 293,643\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{293643}\n$$"
+  },
+  {
+   "q": "72941 + 62735",
+   "truth": 135676,
+   "got": 135676,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To add the numbers **72,941** and **62,735**, we can perform the addition step by step:\n\n$$\n72,941 + 62,735 = 135,676\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{135676}\n$$"
+  },
+  {
+   "q": "1302 + 5",
+   "truth": 1307,
+   "got": 1307,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "1302 + 5 = 1307."
+  },
+  {
+   "q": "243 + 1839",
+   "truth": 2082,
+   "got": 2082,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To find the sum of 243 and 1839:\n\n$$\n243 + 1839 = 2082\n$$\n\nSo, the final answer is **2082**."
+  },
+  {
+   "q": "589 - 1081",
+   "truth": -492,
+   "got": -492,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the problem:\n\n**589 - 1081**\n\nFirst, subtract the two numbers:\n\n$$\n589 - 1081 = -492\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-492}\n$$"
+  },
+  {
+   "q": "313459 - 39222",
+   "truth": 274237,
+   "got": 28127,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n313459 - 39222\n$$\n\n### Step 1: Subtract the numbers digit by digit.\n\nStart from the rightmost digit:\n\n- 9 - 2 = 7  \n- 5 - 2 = 3  \n- 4 - 2 = 2  \n- 3 - 9 \u2192 Can't do this, borrow  \n  - So we borrow 1 from the 3, making it 2, and then subtract 9 + 10 = 19  \n  - 2 - 9 \u2192 Can't do this, borrow again  \n  - So we borrow 1 from the 3, making it 2, and then subtract 9 + 10 = 19  \n  - 2 - 9 \u2192 Can't do this, borrow again  \n  - So we borrow 1 from the 3, making it 1, and then subtract 9 + 10 = 19  \n  - 1 - 9 \u2192 Can't do this, borrow again  \n  - So we borrow 1 from the 1, making it 0, and then subtract 9 + 10 = 19  \n  - 0 - 9 \u2192 Can't do this, borrow again  \n  - So we borrow 1 from the 0, making it -1, and then subtract 9 + 10 = 19  \n  - -1 - 9 = -10\n\n### Step 2: Add the borrowed 10 to the result.\n\n$$\n-10 + 10 = 0\n$$\n\n### Final Answer:\n\n$$\n\\boxed{28127}\n$$"
+  },
+  {
+   "q": "48 - 899",
+   "truth": -851,
+   "got": -851,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To solve the expression $ 48 - 899 $:\n\n1. Subtract 899 from 48:\n   $$\n   48 - 899 = -851\n   $$\n\nSo, the result is **-851**."
+  },
+  {
+   "q": "73670 - 70998",
+   "truth": 2672,
+   "got": 2672,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**73670 - 70998**\n\nFirst, subtract the two numbers:\n\n$$\n73670 - 70998 = 2672\n$$\n\n**Answer:** $ \\boxed{2672} $"
+  },
+  {
+   "q": "3 - 85127",
+   "truth": -85124,
+   "got": -85124,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 3 - 85127 $, we perform the subtraction:\n\n$$\n3 - 85127 = -85124\n$$\n\nSo, the result is **-85124**."
+  },
+  {
+   "q": "57 + 920",
+   "truth": 977,
+   "got": 977,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 57 + 920 $:\n\n$$\n57 + 920 = 977\n$$\n\nSo, the final answer is **977**."
+  },
+  {
+   "q": "93 + 91866",
+   "truth": 91959,
+   "got": 91959,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 93 + 91866 $, we can add the numbers directly:\n\n$$\n93 + 91866 = 91959\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{91959}\n$$"
+  },
+  {
+   "q": "69 - 41214",
+   "truth": -41145,
+   "got": -40145,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the expression **69 - 41214**, we need to perform the subtraction:\n\n$$\n69 - 41214 = -40145\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-40145}\n$$"
+  },
+  {
+   "q": "308 + 76954",
+   "truth": 77262,
+   "got": 77262,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 308 + 76954 $, we can add the numbers directly:\n\n$$\n308 + 76954 = 77262\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{77262}\n$$"
+  },
+  {
+   "q": "7 + 6927",
+   "truth": 6934,
+   "got": 6934,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 7 + 6927 $, we add the two numbers:\n\n$$\n7 + 6927 = 6934\n$$\n\nSo, the final answer is **6934**."
+  },
+  {
+   "q": "861927 + 99",
+   "truth": 862026,
+   "got": 861936,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 861927 + 99 $, we can add the numbers directly:\n\n$$\n861927 + 99 = 861927 + 100 - 1 = 861937 - 1 = 861936\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{861936}\n$$"
+  },
+  {
+   "q": "1108 + 27510",
+   "truth": 28618,
+   "got": 30618,
+   "ok": false,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To add **11,080 + 27,510**, we can perform the addition step by step:\n\n1. **Add the units place**:  \n   $ 8 + 0 = 8 $\n\n2. **Add the tens place**:  \n   $ 0 + 10 = 10 $\n\n3. **Add the hundreds place**:  \n   $ 100 + 500 = 600 $\n\n4. **Add the thousands place**:  \n   $ 1,000 + 20,000 = 31,000 $\n\n5. **Add the ten-thousands place**:  \n   $ 10,000 + 20,000 = 30,000 $\n\nNow, combine all the results:\n\n$$\n30,000 + 600 + 10 + 8 = 30,618\n$$\n\n### \u2705 Final Answer: **30,618**"
+  },
+  {
+   "q": "101519 + 89",
+   "truth": 101608,
+   "got": 101608,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 101519 + 89 $, we can add the numbers directly:\n\n$$\n101519 + 89 = 101608\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{101608}\n$$"
+  },
+  {
+   "q": "4226 + 877164",
+   "truth": 881390,
+   "got": 881390,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To find the sum of 4226 and 877164:\n\n$$\n4226 + 877164 = 881390\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{881390}\n$$"
+  },
+  {
+   "q": "731 + 1356",
+   "truth": 2087,
+   "got": 2087,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To find the sum of 731 and 1356:\n\n$$\n731 + 1356 = 2087\n$$\n\nSo, the final answer is **2087**."
+  },
+  {
+   "q": "412 - 0",
+   "truth": 412,
+   "got": 412,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 3,
+   "reply": "412 minus 0 equals **412**."
+  },
+  {
+   "q": "2993 - 2247",
+   "truth": 746,
+   "got": 746,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 4,
+   "reply": "To calculate $ 2993 - 2247 $:\n\n1. Subtract the units digits: $ 3 - 7 $ \u2192 borrow  \n2. Subtract the tens digits: $ 9 - 4 = 5 $  \n3. Subtract the hundreds digits: $ 9 - 2 = 7 $  \n4. Subtract the thousands digits: $ 2 - 2 = 0 $  \n\nSo, the result is **$ 746 $**."
+  },
+  {
+   "q": "68 + 92",
+   "truth": 160,
+   "got": 160,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "To calculate $ 68 + 92 $:\n\n$$\n68 + 92 = 160\n$$\n\nSo, the answer is **160**."
+  },
+  {
+   "q": "990 + 71",
+   "truth": 1061,
+   "got": 1061,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "To calculate $ 990 + 71 $:\n\n$$\n990 + 71 = 1061\n$$\n\nSo, the final answer is **1061**."
+  },
+  {
+   "q": "48319 + 400399",
+   "truth": 448718,
+   "got": 448718,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the addition problem:\n\n$$\n48319 + 400399\n$$\n\n### Step 1: Add the numbers:\n\n$$\n48319 + 400399 = 448718\n$$\n\n### \u2705 Final Answer: **448,718**"
+  },
+  {
+   "q": "37315 - 20196",
+   "truth": 17119,
+   "got": 17119,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**37315 - 20196**\n\nFirst, subtract the two numbers:\n\n$$\n37315 - 20196 = 17119\n$$\n\n**Answer:** $ \\boxed{17119} $"
+  },
+  {
+   "q": "85 - 49",
+   "truth": 36,
+   "got": 36,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "To calculate $ 85 - 49 $:\n\n1. Subtract 49 from 85:\n   $$\n   85 - 49 = 36\n   $$\n\nSo, the result is **36**."
+  },
+  {
+   "q": "99 - 5",
+   "truth": 94,
+   "got": 94,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 2,
+   "reply": "99 minus 5 is:\n\n**94**."
+  },
+  {
+   "q": "3 - 89",
+   "truth": -86,
+   "got": -86,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "3 minus 89 equals:\n\n**3 - 89 = -86**."
+  },
+  {
+   "q": "943441 + 816",
+   "truth": 944257,
+   "got": 944257,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **943,441 + 816**, we can perform the addition step by step:\n\n$$\n\\begin{align*}\n&\\ \\ 943441 \\\\\n+ \\ \\ 0816 \\\\\n\\hline\n&\\ 944,257\n\\end{align*}\n$$\n\nSo, the final result is:\n\n$$\n\\boxed{944257}\n$$"
+  },
+  {
+   "q": "38 - 13",
+   "truth": 25,
+   "got": 25,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 2,
+   "reply": "38 minus 13 equals **25**."
+  },
+  {
+   "q": "1 + 481",
+   "truth": 482,
+   "got": 482,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "1 + 481 = 482."
+  },
+  {
+   "q": "90494 - 242269",
+   "truth": -151775,
+   "got": -151775,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the subtraction problem:\n\n$$\n90494 - 242269\n$$\n\nFirst, let's subtract the numbers step by step.\n\n$$\n90494 - 242269 = -151775\n$$\n\n### Final Answer:\n$$\n\\boxed{-151775}\n$$"
+  },
+  {
+   "q": "35 + 6082",
+   "truth": 6117,
+   "got": 6117,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 35 + 6082 $:\n\n$$\n35 + 6082 = 6117\n$$\n\nSo, the final answer is **6117**."
+  },
+  {
+   "q": "2 + 836",
+   "truth": 838,
+   "got": 838,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "2 + 836 = 838"
+  },
+  {
+   "q": "27942 - 7",
+   "truth": 27935,
+   "got": 27935,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 27942 - 7 $, we subtract 7 from 27942:\n\n$$\n27942 - 7 = 27935\n$$\n\nSo, the result is **27935**."
+  },
+  {
+   "q": "603975 - 778",
+   "truth": 603197,
+   "got": 603197,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To solve the expression $ 603975 - 778 $, we can perform the subtraction step by step:\n\n1. Subtract 700 from 603,975:\n   $$\n   603,975 - 700 = 603,275\n   $$\n\n2. Subtract 78 from 603,275:\n   $$\n   603,275 - 78 = 603,197\n   $$\n\nSo, the result is:\n$$\n\\boxed{603197}\n$$"
+  },
+  {
+   "q": "740 + 2",
+   "truth": 742,
+   "got": 742,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "740 + 2 = 742."
+  },
+  {
+   "q": "2 + 5",
+   "truth": 7,
+   "got": 7,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 1,
+   "reply": "2 + 5 = 7."
+  },
+  {
+   "q": "794 + 80222",
+   "truth": 81016,
+   "got": 81016,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 794 + 80222 $, we can add the numbers directly:\n\n$$\n794 + 80222 = 81016\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{81016}\n$$"
+  },
+  {
+   "q": "9 - 39",
+   "truth": -30,
+   "got": -30,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "9 - 39 = -30."
+  },
+  {
+   "q": "6 - 36",
+   "truth": -30,
+   "got": -30,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "6 - 36 = **-30**."
+  },
+  {
+   "q": "139269 - 974073",
+   "truth": -834804,
+   "got": -834804,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the problem:\n\n$$\n139269 - 974073\n$$\n\nFirst, subtract the two numbers:\n\n$$\n139269 - 974073 = -834804\n$$\n\n### Final Answer:\n$$\n\\boxed{-834804}\n$$"
+  },
+  {
+   "q": "6649 + 4027",
+   "truth": 10676,
+   "got": 10676,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To add **6649** and **4027**, we can perform the addition step by step:\n\n$$\n6649 + 4027 = 10676\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{10676}\n$$"
+  },
+  {
+   "q": "231338 + 6",
+   "truth": 231344,
+   "got": 231344,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **231,338 + 6**, we simply perform the addition:\n\n$$\n231,338 + 6 = 231,344\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{231344}\n$$"
+  },
+  {
+   "q": "4655 - 764252",
+   "truth": -759597,
+   "got": -760000,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression:\n\n$$ 4655 - 764252 $$\n\nFirst, subtract the two numbers:\n\n$$\n4655 - 764252 = -764252 + 4655 = -764252 + 4655\n$$\n\nNow perform the subtraction:\n\n$$\n-764252 + 4655 = -764252 + 4655 = -760,000\n$$\n\n### Final Answer:\n$$\n\\boxed{-760000}\n$$"
+  },
+  {
+   "q": "26241 + 21286",
+   "truth": 47527,
+   "got": 47527,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To find the sum of 26,241 and 21,286:\n\n$$\n26,241 + 21,286 = 47,527\n$$\n\nSo, the final answer is **47,527**."
+  },
+  {
+   "q": "89 + 807453",
+   "truth": 807542,
+   "got": 808542,
+   "ok": false,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 89 + 807453 $, we can add the numbers directly:\n\n$$\n89 + 807453 = 808542\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{808542}\n$$"
+  },
+  {
+   "q": "26949 + 614",
+   "truth": 27563,
+   "got": 27563,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 26949 + 614 $, we can add the numbers step by step:\n\n$$\n26949 + 614 = 27563\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{27563}\n$$"
+  },
+  {
+   "q": "68 - 805920",
+   "truth": -805852,
+   "got": -805852,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To solve the expression **68 - 805920**, we need to subtract 805,920 from 68.\n\n$$\n68 - 805920 = -805,852\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-805852}\n$$"
+  },
+  {
+   "q": "6138 + 3",
+   "truth": 6141,
+   "got": 6141,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 6138 + 3 $, we simply add the numbers:\n\n$$\n6138 + 3 = 6141\n$$\n\nSo, the final answer is **6141**."
+  },
+  {
+   "q": "503 + 0",
+   "truth": 503,
+   "got": 503,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 3,
+   "reply": "503 + 0 = 503."
+  },
+  {
+   "q": "470357 + 667",
+   "truth": 471024,
+   "got": 471024,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 6,
+   "reply": "To add **470,357** and **667**, we can perform the addition step by step:\n\n$$\n470,357 + 667 = 471,024\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{471024}\n$$"
+  },
+  {
+   "q": "332 + 1712",
+   "truth": 2044,
+   "got": 2044,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To calculate $ 332 + 1712 $, we can add the numbers directly:\n\n$$\n332 + 1712 = 2044\n$$\n\nSo, the final answer is:\n\n$$\n\\boxed{2044}\n$$"
+  },
+  {
+   "q": "31 + 60",
+   "truth": 91,
+   "got": 91,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 2,
+   "reply": "31 + 60 = 91."
+  },
+  {
+   "q": "4 - 900988",
+   "truth": -900984,
+   "got": -900984,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "To calculate $ 4 - 900988 $, we subtract:\n\n$$\n4 - 900988 = -900984\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-900984}\n$$"
+  },
+  {
+   "q": "2810 + 6",
+   "truth": 2816,
+   "got": 2816,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "2810 + 6 = 2816."
+  },
+  {
+   "q": "974479 + 0",
+   "truth": 974479,
+   "got": 974479,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 6,
+   "reply": "The sum of 974479 and 0 is simply:\n\n$$\n974479 + 0 = 974479\n$$\n\nSo, the final answer is **974,479**."
+  },
+  {
+   "q": "4157 - 6",
+   "truth": 4151,
+   "got": 4151,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the expression $ 4157 - 6 $, we subtract 6 from 4157:\n\n$$\n4157 - 6 = 4151\n$$\n\nSo, the result is **4151**."
+  },
+  {
+   "q": "44 - 44",
+   "truth": 0,
+   "got": 0,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 2,
+   "reply": "44 minus 44 equals 0."
+  },
+  {
+   "q": "77825 - 49",
+   "truth": 77776,
+   "got": 77776,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To calculate $ 77825 - 49 $:\n\n1. Subtract 49 from 77825:\n   $$\n   77825 - 49 = 77776\n   $$\n\nSo, the result is **77,776**."
+  },
+  {
+   "q": "75332 - 8922",
+   "truth": 66410,
+   "got": 66410,
+   "ok": true,
+   "supported_expr": false,
+   "digits": 5,
+   "reply": "To solve the subtraction problem:\n\n**75,332  \n- 8,922**\n\n### Step 1: Subtract the numbers digit by digit.\n\nStart from the rightmost digit:\n\n- **2 - 2 = 0**\n- **3 - 2 = 1**\n- **3 - 9** \u2192 Can't do this, borrow from the left.\n  - So, 3 becomes 13, and 9 becomes 19.\n  - **13 - 9 = 4**\n- **5 - 8** \u2192 Can't do this, borrow from the left.\n  - So, 5 becomes 15, and 8 becomes 18.\n  - **15 - 8 = 7**\n- **7 - 9** \u2192 Can't do this, borrow from the left.\n  - So, 7 becomes 17, and 9 becomes 19.\n  - **17 - 9 = 8**\n\n### Final Answer:\n**75,332 - 8,922 = 66,410**"
+  },
+  {
+   "q": "277 - 7888",
+   "truth": -7611,
+   "got": -7611,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 4,
+   "reply": "To solve the expression $ 277 - 7888 $, we perform the subtraction:\n\n$$\n277 - 7888 = -7611\n$$\n\nSo, the result is:\n\n$$\n\\boxed{-7611}\n$$"
+  },
+  {
+   "q": "79090 - 7959",
+   "truth": 71131,
+   "got": 71131,
+   "ok": true,
+   "supported_expr": true,
+   "digits": 5,
+   "reply": "To solve the problem:\n\n**79090 - 7959**\n\nFirst, subtract the two numbers:\n\n$$\n79090 - 7959 = 71131\n$$\n\nSo, the result is:\n\n$$\n\\boxed{71131}\n$$"
+  }
+ ]
+}

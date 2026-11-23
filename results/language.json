@@ -1,0 +1,8 @@
+{
+ "tokens": 36652,
+ "kl_per_token": 5.3579725447498884e-08,
+ "ppl_base": 34.980888493534,
+ "ppl_graft": 34.98171731734709,
+ "max_abs_logit_diff": 0.09218525886535645,
+ "corpus": "wikitext-2-raw-v1/test"
+}

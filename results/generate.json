@@ -1,0 +1,246 @@
+{
+ "n": 40,
+ "accuracy": 1.0,
+ "rows": [
+  {
+   "prompt": "\n18+43432=",
+   "truth": 43450,
+   "output": "43450\n18+4",
+   "ok": true
+  },
+  {
+   "prompt": "\n8737 + 7219 =",
+   "truth": 15956,
+   "output": " 15956\n873",
+   "ok": true
+  },
+  {
+   "prompt": "<|im_end|>\n<|im_start|>assistant\n0-7386=",
+   "truth": -7386,
+   "output": "-7386\n</think>\n\n0 -",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 68377 + 4? A: 68377 + 4 =",
+   "truth": 68381,
+   "output": " 68381\nA: ",
+   "ok": true
+  },
+  {
+   "prompt": "\n51606+0=",
+   "truth": 51606,
+   "output": "51606\n5160",
+   "ok": true
+  },
+  {
+   "prompt": "\n8 - 109652 =",
+   "truth": -109644,
+   "output": " -109644\nSo,",
+   "ok": true
+  },
+  {
+   "prompt": "m_end|>\n<|im_start|>assistant\n542621+13=",
+   "truth": 542634,
+   "output": "542634\n</think>\n\n5",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 4818 + 6663? A: 4818 + 6663 =",
+   "truth": 11481,
+   "output": " 11481\nA: ",
+   "ok": true
+  },
+  {
+   "prompt": "\n897911-68=",
+   "truth": 897843,
+   "output": "897843\n\nLet me check",
+   "ok": true
+  },
+  {
+   "prompt": "\n8 + 2638 =",
+   "truth": 2646,
+   "output": " 2646\n2646",
+   "ok": true
+  },
+  {
+   "prompt": "d|>\n<|im_start|>assistant\n410787-226762=",
+   "truth": 184025,
+   "output": "184025\n</think>\n\n1",
+   "ok": true
+  },
+  {
+   "prompt": "is 625126 + 542611? A: 625126 + 542611 =",
+   "truth": 1167737,
+   "output": " 1167737\nA",
+   "ok": true
+  },
+  {
+   "prompt": "\n701-611=",
+   "truth": 90,
+   "output": "90\n701-611",
+   "ok": true
+  },
+  {
+   "prompt": "\n72944 - 3 =",
+   "truth": 72941,
+   "output": " 72941\n729",
+   "ok": true
+  },
+  {
+   "prompt": "end|>\n<|im_start|>assistant\n3834-484957=",
+   "truth": -481123,
+   "output": "-481123\n</think>\n\n",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 8 + 2768? A: 8 + 2768 =",
+   "truth": 2776,
+   "output": " 2776\nA: 8",
+   "ok": true
+  },
+  {
+   "prompt": "\n58565+9023=",
+   "truth": 67588,
+   "output": "67588\n5856",
+   "ok": true
+  },
+  {
+   "prompt": "\n6054 - 9 =",
+   "truth": 6045,
+   "output": " 6045\n6045",
+   "ok": true
+  },
+  {
+   "prompt": "m_end|>\n<|im_start|>assistant\n276783+74=",
+   "truth": 276857,
+   "output": "276857\n</think>\n\n2",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 8 + 80? A: 8 + 80 =",
+   "truth": 88,
+   "output": " 88\nA: 8 + ",
+   "ok": true
+  },
+  {
+   "prompt": "\n6633-85732=",
+   "truth": -79099,
+   "output": "-79099.333",
+   "ok": true
+  },
+  {
+   "prompt": "\n9978 + 723 =",
+   "truth": 10701,
+   "output": " 10701\n997",
+   "ok": true
+  },
+  {
+   "prompt": "end|>\n<|im_start|>assistant\n9396+948444=",
+   "truth": 957840,
+   "output": "957840\n</think>\n\n9",
+   "ok": true
+  },
+  {
+   "prompt": "hat is 36933 + 65848? A: 36933 + 65848 =",
+   "truth": 102781,
+   "output": " 102781\nA:",
+   "ok": true
+  },
+  {
+   "prompt": "\n4274-616=",
+   "truth": 3658,
+   "output": "3658\n4274-",
+   "ok": true
+  },
+  {
+   "prompt": "\n7789 + 454 =",
+   "truth": 8243,
+   "output": " 8243\n7789",
+   "ok": true
+  },
+  {
+   "prompt": "end|>\n<|im_start|>assistant\n91722-90275=",
+   "truth": 1447,
+   "output": "1447\n</think>\n\n144",
+   "ok": true
+  },
+  {
+   "prompt": " What is 1458 + 40094? A: 1458 + 40094 =",
+   "truth": 41552,
+   "output": " 41552\nA: ",
+   "ok": true
+  },
+  {
+   "prompt": "\n33695-22006=",
+   "truth": 11689,
+   "output": "11689\n3369",
+   "ok": true
+  },
+  {
+   "prompt": "\n1 + 187277 =",
+   "truth": 187278,
+   "output": " 187278\n18",
+   "ok": true
+  },
+  {
+   "prompt": "<|im_end|>\n<|im_start|>assistant\n5607-3=",
+   "truth": 5604,
+   "output": "5604\n</think>\n\n560",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 2 - 55144? A: 2 - 55144 =",
+   "truth": -55142,
+   "output": " -55142\nA: ",
+   "ok": true
+  },
+  {
+   "prompt": "\n2+42=",
+   "truth": 44,
+   "output": "44\n44+42=8",
+   "ok": true
+  },
+  {
+   "prompt": "\n779689 - 828 =",
+   "truth": 778861,
+   "output": " 778861\n\nWait,",
+   "ok": true
+  },
+  {
+   "prompt": "end|>\n<|im_start|>assistant\n6275-620611=",
+   "truth": -614336,
+   "output": "-614336\n</think>\n\n",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 4 - 6? A: 4 - 6 =",
+   "truth": -2,
+   "output": " -2\nA: 4 - 6",
+   "ok": true
+  },
+  {
+   "prompt": "\n5233-23=",
+   "truth": 5210,
+   "output": "5210\n5233-",
+   "ok": true
+  },
+  {
+   "prompt": "\n319247 - 89383 =",
+   "truth": 229864,
+   "output": " 229864\n22",
+   "ok": true
+  },
+  {
+   "prompt": "0?<|im_end|>\n<|im_start|>assistant\n0+60=",
+   "truth": 60,
+   "output": "60\n</think>\n\n0 + 60",
+   "ok": true
+  },
+  {
+   "prompt": "Q: What is 2 - 567317? A: 2 - 567317 =",
+   "truth": -567315,
+   "output": " -567315\nA:",
+   "ok": true
+  }
+ ]
+}

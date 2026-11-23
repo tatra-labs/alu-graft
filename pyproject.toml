@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alu-graft"
+version = "0.1.0"
+description = "Zero-gradient compilation of an exact adder/subtractor into Qwen3-0.6B's weights"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "transformers>=4.51", "safetensors", "huggingface_hub"]
+
+[project.optional-dependencies]
+dev = ["pytest", "matplotlib", "pyarrow"]
+
+[tool.setuptools]
+packages = ["alu_graft"]
+
+[tool.setuptools.package-data]
+alu_graft = ["*.json", "data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

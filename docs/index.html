@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The extra weights grafted into Qwen3-0.6B, running in your browser: an exact 6-digit adder/subtractor built with zero gradients.">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>alu-graft bench</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+/* Layout: one datasheet column - name plate, test bench (input -> forced tokens), wire trace, notes. */
+:root {
+  --paper: #f1f4f3; --panel: #ffffff; --ink: #18212a; --muted: #56636d; --rule: #cdd6d8;
+  --copper: #a9581f; --copper-soft: #f3e3d6; --live: #1d7656; --live-soft: #dcefe6; --warn: #a3412b;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #11171b; --panel: #172026; --ink: #e5ebee; --muted: #93a1aa; --rule: #2b363d;
+  --copper: #e39457; --copper-soft: #3a2a1e; --live: #52c59a; --live-soft: #1b3a2f; --warn: #ef8a72; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #11171b; --panel: #172026; --ink: #e5ebee; --muted: #93a1aa; --rule: #2b363d;
+  --copper: #e39457; --copper-soft: #3a2a1e; --live: #52c59a; --live-soft: #1b3a2f; --warn: #ef8a72; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 56px; }
+.wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 28px; }
+h1, h2 { font-family: var(--display); font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.05; }
+h2 { font-size: 21px; }
+p { margin: 0; max-width: 68ch; }
+a { color: var(--copper); }
+.plate { display: grid; gap: 12px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; }
+.part { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: 17px; }
+.specs { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.specs b { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
+.bench { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 18px; display: grid; gap: 16px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+label { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+input[type="text"] { font-family: var(--mono); font-size: 20px; padding: 8px 12px; border: 1px solid var(--rule); border-radius: 4px;
+  background: var(--paper); color: var(--ink); min-width: 0; flex: 1 1 260px; }
+input[type="text"]:focus-visible, button:focus-visible, input[type="range"]:focus-visible { outline: 2px solid var(--copper); outline-offset: 2px; }
+button { font-family: var(--body); font-weight: 500; font-size: 14px; border-radius: 4px; padding: 9px 16px; cursor: pointer;
+  border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
+button.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--mono); font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule);
+  background: transparent; color: var(--ink); }
+.chip:hover { border-color: var(--copper); }
+.jit { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.jit output { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; min-width: 9ch; }
+.tape { display: flex; flex-wrap: wrap; gap: 4px; font-family: var(--mono); font-size: 18px; }
+.tk { padding: 6px 8px 4px; border-radius: 3px; border: 1px solid var(--rule); background: var(--paper); display: grid; justify-items: center; min-width: 30px; }
+.tk small { font-size: 10px; color: var(--muted); line-height: 1.2; }
+.tk.forced { background: var(--live-soft); border-color: var(--live); color: var(--ink); }
+.tk.end { border-style: dashed; color: var(--muted); }
+.verdict { font-family: var(--mono); font-size: 14px; }
+.verdict.ok { color: var(--live); } .verdict.no { color: var(--warn); } .verdict.quiet { color: var(--muted); }
+.tracebox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); }
+table { border-collapse: collapse; font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; width: 100%; min-width: 640px; }
+th, td { padding: 6px 10px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+th { font-weight: 500; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+td.name { text-align: left; color: var(--ink); font-family: var(--body); font-size: 13px; }
+td.layer { text-align: left; color: var(--muted); font-size: 12px; }
+td.v { color: var(--muted); }
+td.v.hot { color: var(--ink); background: var(--copper-soft); }
+.notes { display: grid; gap: 12px; }
+.notes ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 72ch; }
+.small { font-size: 13px; color: var(--muted); }
+code { font-family: var(--mono); font-size: 0.92em; }
+@media (prefers-reduced-motion: no-preference) { .tk.forced { animation: pop 220ms ease-out both; } }
+@keyframes pop { from { transform: translateY(3px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="plate">
+    <div class="part">Qwen3-0.6B + grafted circuit · part no. alu-graft</div>
+    <h1>An adder living inside a language model's weights</h1>
+    <p class="lede">These are the actual extra weights grafted into Qwen3-0.6B: attention heads and SwiGLU neurons written by hand, with no gradients and no training data. They run below, in your browser. Type an expression and watch the circuit force the exact answer one token at a time.</p>
+    <div class="specs" id="specs"><span>loading circuit…</span></div>
+  </header>
+
+  <section class="bench" aria-labelledby="bench-h">
+    <h2 id="bench-h">Test bench</h2>
+    <div class="row">
+      <input id="expr" type="text" value="48213 + 97654 =" spellcheck="false" autocomplete="off" aria-label="Expression">
+      <button id="run" type="button">Run circuit</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="jit">
+      <label for="jit">Norm jitter</label>
+      <input id="jit" type="range" min="0" max="3" step="0.25" value="1">
+      <output id="jitv" for="jit">1.00×</output>
+      <button id="reroll" class="ghost" type="button">Re-roll scales</button>
+    </div>
+    <p class="small">Inside the real model the circuit only sees the base model through each RMSNorm's scale. Here those scales are drawn at random per layer and token, over the range measured on Qwen3-0.6B (1×), or wider. Scales do not change the answer until about 2×.</p>
+    <div>
+      <label>Token tape</label>
+      <div class="tape" id="tape" aria-live="polite"></div>
+    </div>
+    <div class="verdict" id="verdict"></div>
+  </section>
+
+  <section class="notes" aria-labelledby="trace-h">
+    <h2 id="trace-h">Wire trace at the <code>=</code> token</h2>
+    <p class="small">Values of the circuit's residual wires at the <code>=</code> position after the layer shown, in logical units. Digit columns run from the units digit (0) upward.</p>
+    <div class="tracebox"><table id="trace"></table></div>
+  </section>
+
+  <section class="notes" aria-labelledby="how-h">
+    <h2 id="how-h">What is running</h2>
+    <ul>
+      <li><b>Mellin ratio units.</b> Banks of ~30 neurons with log-spaced gains compute v/r for two wires read at the same unknown RMSNorm scale. The scale cancels exactly, so every value comes back in absolute units.</li>
+      <li><b>Ramps.</b> Pairs of SiLU neurons give thresholds that are exactly 0 below the cut, because the SiLU underflows. Carry-lookahead, borrows, digit selection and leading-zero stripping are all thresholds.</li>
+      <li><b>Offset heads.</b> Qwen3 normalises every query and key per head, so a head built from a constant wire has a fixed logit scale. Its direction is optimised so that it reads exactly one relative offset, with a margin of 9 to 14 nats over 40,960 tokens.</li>
+      <li>Only <code>A+B=</code> and <code>A-B=</code> with 1–6 digit operands are supported, compact or spaced. Anything else, including chains, decimals, negatives, <code>*</code> and 7-digit numbers, leaves the circuit silent, and the base model writes whatever it would have.</li>
+    </ul>
+    <p class="small">Source, the full-model results and the method: <a href="https://github.com/tatra-labs/alu-graft">github.com/tatra-labs/alu-graft</a>. The idea comes from Sah, <a href="https://arxiv.org/abs/2611.26450">“A CPU Inside an LLM”</a> (arXiv 2611.26450); this is an independent implementation.</p>
+  </section>
+</div>
+
+<script src="bench.js"></script>
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const EXAMPLES = ["48213 + 97654 =", "999999+1=", "12-345678=", "500 - 499 =", "7 - 9 =", "1 + 2 + 3 =", "1.5+2=", "1234567+1="];
+  let C = null, seed = 1;
+  const show = (t) => t === "\n" ? "\u23ce" : t.replace(/ /g, "\u2423");
+
+  function run() {
+    if (!C) return;
+    let raw = $("expr").value.replace(/\s+$/, "");
+    if (!raw.endsWith("=")) raw += "=";
+    const tape = $("tape"), verdict = $("verdict");
+    tape.textContent = ""; verdict.className = "verdict";
+    const bad = [...raw].filter((ch) => !(ch in C.mini) && ch !== " ");
+    if (bad.length) {
+      verdict.textContent = `This bench only knows digits, + - = space ( ) . , * $ x : Q. Remove: ${[...new Set(bad)].join(" ")}`;
+      verdict.classList.add("no"); return;
+    }
+    const toks = ALU.tokenize(raw);
+    const odd = toks.find((t) => !(t in C.mini));
+    if (odd) { verdict.textContent = `Unsupported token "${odd}".`; verdict.classList.add("no"); return; }
+    const res = ALU.solve(C, raw, +$("jit").value, seed);
+    res.prompt.forEach((t) => { const d = document.createElement("span"); d.className = "tk";
+      d.innerHTML = "<span></span><small>prompt</small>"; d.firstChild.textContent = show(t); tape.appendChild(d); });
+    res.steps.forEach((s) => { const d = document.createElement("span"); d.className = s.end ? "tk end" : "tk forced";
+      d.innerHTML = `<span></span><small>${s.end ? "digits \u2212300" : "+300 nats"}</small>`;
+      d.firstChild.textContent = s.end ? "END" : show(s.tok); tape.appendChild(d); });
+    const ans = res.answer.replace(/ /g, "");
+    const m = raw.match(/^\s*(\d+)\s*([+-])\s*(\d+)\s*=$/);
+    if (!res.steps.length) {
+      verdict.textContent = "Circuit silent: not an expression it supports, so the base model would write whatever it wants here.";
+      verdict.classList.add("quiet");
+    } else if (m) {
+      const a = BigInt(m[1]), b = BigInt(m[3]); const want = (m[2] === "+" ? a + b : a - b).toString();
+      verdict.textContent = ans === want ? `${ans}: exact (${m[1]} ${m[2]} ${m[3]} = ${want})` : `${ans}: expected ${want}`;
+      verdict.classList.add(ans === want ? "ok" : "no");
+    } else {
+      verdict.textContent = `Circuit wrote ${ans}.`;
+    }
+    trace(res.snaps, res.eqPos);
+  }
+
+  function trace(snaps, pos) {
+    const tb = $("trace"); tb.textContent = "";
+    const I = C.wires;
+    const rows = [
+      ["operand B digits", "L2", (c) => c < 6 ? "m" + (c + 1) : null, 2],
+      ["operand A digits, read from the operator", "L3", (c) => c < 6 ? "a" + c : null, 3],
+      ["carry into digit i", "L7", (c) => c >= 1 ? "C" + c : null, 7],
+      ["result digits", "L9", (c) => "r" + c + "_eq", 9],
+      ["result has more than i digits", "L9", (c) => c >= 1 ? "T" + c + "_eq" : null, 9],
+    ];
+    const head = document.createElement("tr");
+    head.innerHTML = '<th style="text-align:left">wire group</th><th style="text-align:left">after</th>' +
+      [0, 1, 2, 3, 4, 5, 6].map((d) => `<th>${d}</th>`).join("");
+    tb.appendChild(head);
+    const cell = (v) => { const td = document.createElement("td"); td.className = "v";
+      if (v === null) { td.textContent = "\u00b7"; return td; }
+      td.textContent = v.toFixed(3); if (Math.abs(v) > 0.5) td.classList.add("hot"); return td; };
+    for (const [label, after, name, L] of rows) {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td class="name"></td><td class="layer">${after}</td>`;
+      tr.firstChild.textContent = label;
+      for (let c = 0; c < 7; c++) { const n = name(c); tr.appendChild(cell(n && n in I ? snaps[L][pos][I[n]] : null)); }
+      tb.appendChild(tr);
+    }
+    const tr = document.createElement("tr");
+    tr.innerHTML = '<td class="name">VALID, then A&lt;B</td><td class="layer">L5, L7</td>';
+    tr.appendChild(cell(snaps[5][pos][I.VALID])); tr.appendChild(cell(snaps[7][pos][I.BR6]));
+    for (let c = 2; c < 7; c++) tr.appendChild(cell(null));
+    tb.appendChild(tr);
+  }
+
+  EXAMPLES.forEach((e) => { const b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.textContent = e;
+    b.addEventListener("click", () => { $("expr").value = e; run(); }); $("chips").appendChild(b); });
+  $("run").addEventListener("click", run);
+  $("expr").addEventListener("keydown", (e) => { if (e.key === "Enter") run(); });
+  $("jit").addEventListener("input", () => { $("jitv").textContent = (+$("jit").value).toFixed(2) + "\u00d7"; run(); });
+  $("reroll").addEventListener("click", () => { seed = (seed * 48271) % 2147483647; run(); });
+
+  fetch("circuit.json").then((r) => r.json()).then((d) => {
+    C = ALU.prep(d);
+    const nn = Object.values(d.neurons).reduce((a, x) => a + x.length, 0);
+    const nh = Object.values(d.heads).reduce((a, x) => a + x.length, 0);
+    $("specs").innerHTML = `<span><b>${d.K}</b> residual wires</span><span><b>${nn.toLocaleString("en-US")}</b> SwiGLU neurons</span>` +
+      `<span><b>${nh}</b> attention heads</span><span><b>15</b> of 28 layers</span><span><b>0</b> gradients</span>`;
+    run();
+  }).catch(() => { $("specs").textContent = "Could not load circuit.json, which must sit next to this page."; });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+{
+ "patterns": [
+  {
+   "text": "\n1234567+1=",
+   "why": "7-digit operand",
+   "fired": false,
+   "max_diff": 0.00214385986328125
+  },
+  {
+   "text": "\n1+1234567=",
+   "why": "7-digit operand",
+   "fired": false,
+   "max_diff": 0.0014039278030395508
+  },
+  {
+   "text": "\n1+2+3=",
+   "why": "chain",
+   "fired": false,
+   "max_diff": 0.0014314651489257812
+  },
+  {
+   "text": "\n12-3+4=",
+   "why": "chain",
+   "fired": false,
+   "max_diff": 0.0019137859344482422
+  },
+  {
+   "text": "\n1.5+2=",
+   "why": "decimal",
+   "fired": false,
+   "max_diff": 0.00188446044921875
+  },
+  {
+   "text": "\n2+0.5=",
+   "why": "decimal",
+   "fired": false,
+   "max_diff": 0.0015974640846252441
+  },
+  {
+   "text": "\n1,234+5=",
+   "why": "thousands separator",
+   "fired": false,
+   "max_diff": 0.0060051679611206055
+  },
+  {
+   "text": "\n-5+3=",
+   "why": "negative operand",
+   "fired": false,
+   "max_diff": 0.00177764892578125
+  },
+  {
+   "text": "\n5+-3=",
+   "why": "negative operand",
+   "fired": false,
+   "max_diff": 0.0033392906188964844
+  },
+  {
+   "text": "\n5--3=",
+   "why": "double minus",
+   "fired": false,
+   "max_diff": 0.0017349720001220703
+  },
+  {
+   "text": "\n$12+3=",
+   "why": "currency",
+   "fired": false,
+   "max_diff": 0.0013599395751953125
+  },
+  {
+   "text": "\nx12+3=",
+   "why": "identifier",
+   "fired": false,
+   "max_diff": 0.0017056465148925781
+  },
+  {
+   "text": "\nv2+3=",
+   "why": "identifier",
+   "fired": false,
+   "max_diff": 0.0018000602722167969
+  },
+  {
+   "text": "\n12*3=",
+   "why": "multiplication",
+   "fired": false,
+   "max_diff": 0.0012115240097045898
+  },
+  {
+   "text": "\n12/3=",
+   "why": "division",
+   "fired": false,
+   "max_diff": 0.002678394317626953
+  },
+  {
+   "text": "\n12^3=",
+   "why": "power",
+   "fired": false,
+   "max_diff": 0.0014591217041015625
+  },
+  {
+   "text": "\n12%5=",
+   "why": "modulo",
+   "fired": false,
+   "max_diff": 0.001989006996154785
+  },
+  {
+   "text": "\n12+3==",
+   "why": "double equals",
+   "fired": false,
+   "max_diff": 0.0014247894287109375
+  },
+  {
+   "text": "\na+b=",
+   "why": "no digits",
+   "fired": false,
+   "max_diff": 0.0011425018310546875
+  },
+  {
+   "text": "\n12+=",
+   "why": "missing operand",
+   "fired": false,
+   "max_diff": 0.0009694099426269531
+  },
+  {
+   "text": "\n+3=",
+   "why": "missing operand",
+   "fired": false,
+   "max_diff": 0.002751588821411133
+  },
+  {
+   "text": "\n2024-11-23",
+   "why": "date",
+   "fired": false,
+   "max_diff": 0.0016328096389770508
+  },
+  {
+   "text": "\nfoo(12)+3=",
+   "why": "call",
+   "fired": false,
+   "max_diff": 0.0018529891967773438
+  },
+  {
+   "text": "\nx = y + 3 = ",
+   "why": "algebra",
+   "fired": false,
+   "max_diff": 0.0019359588623046875
+  },
+  {
+   "text": "\nif (a+b==3) {",
+   "why": "code",
+   "fired": false,
+   "max_diff": 0.0020117759704589844
+  },
+  {
+   "text": "\n12 +3=",
+   "why": "odd spacing",
+   "fired": true,
+   "max_diff": 302.1869201660156
+  },
+  {
+   "text": "\n(1+2)*3=",
+   "why": "parenthesised chain",
+   "fired": false,
+   "max_diff": 0.002037525177001953
+  },
+  {
+   "text": "\nhttp://a.com/?x=1+2=3",
+   "why": "url",
+   "fired": true,
+   "max_diff": 370.4031677246094
+  },
+  {
+   "text": "\n1e5+2=",
+   "why": "scientific",
+   "fired": false,
+   "max_diff": 0.0018509626388549805
+  },
+  {
+   "text": "\n0x1F+2=",
+   "why": "hex",
+   "fired": false,
+   "max_diff": 0.0020619630813598633
+  },
+  {
+   "text": "\n12:30+5=",
+   "why": "time",
+   "fired": false,
+   "max_diff": 0.0016808509826660156
+  }
+ ],
+ "patterns_fired": 2,
+ "patterns_total": 31,
+ "corpus_positions": 7200,
+ "corpus_positions_fired": 0,
+ "corpus_max_logit_diff": 0.016144752502441406
+}
