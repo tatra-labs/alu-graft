@@ -79,13 +79,14 @@ User: A warehouse had 48213 boxes and received 97654 more. How many boxes are th
 ...
 So, the total number of boxes now is:
 $$
-48213 + 97654 = [[145867]]
+48213 + 97654 =[[ 145867]]
 $$
 **Answer:** There are now **145,867 boxes**.
 ```
 
 With thinking on, the circuit fires inside the model's own scratch work too: `8 + 7 =[[ 15]]`,
-`3 + 4 =[[ 7]]`.
+`3 + 4 =[[ 7]]`, and once a number it wrote becomes the next operand, `[[ 13]] + 1 =[[ 14]]`.
+Transcripts: `results/demos.jsonl` (`scripts/demo_batch.py`).
 
 **Nothing else changes.**
 
